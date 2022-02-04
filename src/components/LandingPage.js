@@ -1,18 +1,14 @@
 import React from "react";
-import {
-  StyledLandingPage,
-  Left,
-  Right,
-  Row,
-} from "../styles/LandingPage.styled";
-import { Container } from "../styles/Container.styled";
+import { Left, Right, Row } from "../styles/LandingPage.styled";
+import { Container, BackdropLContainer } from "../styles/Container.styled";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import illustration from "../assets/images/Illustration.svg";
+import { Button } from "../styles/Button.styled";
 
 const LandingPage = () => {
   return (
     <div>
-      <StyledLandingPage>
+      <BackdropLContainer>
         <Container>
           <Row>
             <Left>
@@ -23,7 +19,7 @@ const LandingPage = () => {
                   do eiusmod tempor incididunt.
                 </p>
                 <span>
-                  <a href="/viewourwork">View our work</a>
+                  <Button href="/viewourwork">View our work</Button>
                   <a href="/pricing">
                     View Pricing <HiOutlineArrowNarrowRight size={30} />
                   </a>
@@ -35,7 +31,7 @@ const LandingPage = () => {
             </Right>
           </Row>
         </Container>
-      </StyledLandingPage>
+      </BackdropLContainer>
     </div>
   );
 };

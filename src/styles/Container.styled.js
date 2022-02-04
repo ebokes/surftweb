@@ -5,3 +5,8 @@ export const Container = styled.div`
   width: 80%;
   margin: 0 auto;
 `;
+
+export const BackdropLContainer = styled.div`
+  background-color: ${({ theme }) => theme.colors.primary2};
+  color: ${({ theme }) => theme.colors.tertiary2};
+`;

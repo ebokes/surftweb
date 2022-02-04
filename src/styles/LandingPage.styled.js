@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const StyledLandingPage = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary2};
-  color: ${({ theme }) => theme.colors.tertiary2};
-`;
-
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
@@ -44,17 +39,6 @@ export const Left = styled.div`
       width: 24rem;
     }
 
-    a {
-      color: ${({ theme }) => theme.colors.tertiary4};
-      padding: 1.6rem 5.6rem;
-      background-color: ${({ theme }) => theme.colors.secondary1};
-      display: inline-block;
-      border-radius: 4.1rem;
-      font-weight: 600;
-      line-height: 3.2rem;
-      font-size: 1.8rem;
-    }
-
     & a + a {
       display: flex;
       justify-content: space-around;
@@ -64,6 +48,7 @@ export const Left = styled.div`
       color: ${({ theme }) => theme.colors.tertiary1};
       padding: 0;
       font-weight: 500;
+      font-size: 1.8rem;
 
       @media (max-width: 506px) {
         margin-left: 5rem;
