@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import LandingPage from "./components/LandingPage";
+import Navbar from "./components/Navbar";
 
 const theme = {
   colors: {
@@ -28,6 +29,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Fragment>
         <GlobalStyle />
+        <Navbar />
         <LandingPage />
       </Fragment>
     </ThemeProvider>

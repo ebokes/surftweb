@@ -18,6 +18,13 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40rem;
+}
+
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
