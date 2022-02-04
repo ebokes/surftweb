@@ -20,7 +20,7 @@ export const Left = styled.div`
   width: 45%;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    width: 80%;
+    width: 100%;
   }
 
   h1 {
@@ -37,6 +37,12 @@ export const Left = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 43rem;
+
+    @media (max-width: 506px) {
+      display: inline-block;
+      text-align: center;
+      width: 24rem;
+    }
 
     a {
       color: ${({ theme }) => theme.colors.tertiary4};
@@ -58,6 +64,11 @@ export const Left = styled.div`
       color: ${({ theme }) => theme.colors.tertiary1};
       padding: 0;
       font-weight: 500;
+
+      @media (max-width: 506px) {
+        margin-left: 5rem;
+        margin-top: 3rem;
+      }
     }
   }
 `;
