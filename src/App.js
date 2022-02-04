@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
+import LandingPage from "./components/LandingPage";
 
 const theme = {
   colors: {
@@ -27,7 +28,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Fragment>
         <GlobalStyle />
-        <h1>Hello world</h1>
+        <LandingPage />
       </Fragment>
     </ThemeProvider>
   );
