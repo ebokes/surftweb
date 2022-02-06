@@ -20,9 +20,7 @@ a{
 
 ul{
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 40rem;
+    
 }
 
 body {
