@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 12.8rem 0;
+  padding: 19rem 0 12rem 0;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     flex-direction: column;
@@ -62,12 +62,12 @@ export const Right = styled.div`
   display: flex;
   align-self: center;
 
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    display: none;
-  }
-
   img {
     max-width: 100%;
     align-self: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    display: none;
   }
 `;
