@@ -21,13 +21,3 @@ const workData = [
   },
 ];
 export default workData;
-
-// import React from 'react';
-
-// const workDataComp = () => {
-//   return <div>
-
-//   </div>;
-// };
-
-// export default workDataComp;

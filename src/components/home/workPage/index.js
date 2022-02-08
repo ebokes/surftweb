@@ -27,7 +27,13 @@ function WorkPage() {
             {workData.map((item) => (
               <List>
                 <div className="vector">
-                  <p>0{item.id}</p>
+                  <div className="block3">
+                    <div className="block2">
+                      <div className="block1">
+                        <p>0{item.id}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <h5>{item.heading}</h5>
                 <p>{item.text}</p>

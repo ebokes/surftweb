@@ -41,6 +41,50 @@ export const List = styled.div`
   margin-bottom: 4.8rem;
   margin-right: 3.5rem;
 
+  .vector {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+  }
+  .block1 {
+    background: #5239fa;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 8px;
+    bottom: 8px;
+    border-radius: 0 1rem 0rem 1rem;
+
+    p {
+      color: ${({ theme }) => theme.colors.tertiary2};
+      font-size: 1.8rem;
+      font-weight: 500;
+      position: absolute;
+      left: 8px;
+      top: 13px;
+    }
+  }
+  .block2 {
+    background: #fcd980;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 0rem 0rem 0rem 1rem;
+  }
+  .block3 {
+    background: #2405f2;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 1px;
+    bottom: 1px;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  .block4 {
+  }
+
   h5 {
     font-size: 3.2rem;
     font-weight: 500;
