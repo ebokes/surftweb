@@ -3,6 +3,7 @@ import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
 import LandingPage from "./components/home/landingPage/index";
 import Navbar from "./components/navbar/index";
+import WorkPage from "./components/home/workPage/index";
 
 const theme = {
   colors: {
@@ -32,6 +33,7 @@ function App() {
         <GlobalStyle />
         <Navbar />
         <LandingPage />
+        <WorkPage />
       </Fragment>
     </ThemeProvider>
   );
