@@ -1,9 +1,12 @@
 import React from "react";
-import { Left, Right, Row } from "../styles/LandingPage.styled";
-import { Container, BackdropContainer } from "../styles/Container.styled";
+import { Left, Right, Row } from "./landingPageStyle";
+import {
+  Container,
+  BackdropContainer,
+} from "../../../reuseableComponents/containerStyle";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import illustration from "../assets/images/Illustration.svg";
-import { Button } from "../styles/Button.styled";
+import illustration from "../../../assets/images/Illustration.svg";
+import { Button } from "../../../reuseableComponents/buttonStyle";
 
 const LandingPage = () => {
   return (

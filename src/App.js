@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { GlobalStyle } from "./styles/GlobalStyles";
+import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
-import LandingPage from "./components/LandingPage";
-import Navbar from "./components/Navbar";
+import LandingPage from "./components/home/landingPage/index";
+import Navbar from "./components/navbar/index";
 
 const theme = {
   colors: {

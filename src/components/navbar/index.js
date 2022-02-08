@@ -1,9 +1,12 @@
 // import { useState } from "react";
-import { BackdropContainer, Container } from "../styles/Container.styled";
-import { NavbarContent, Logo, Links } from "../styles/Navbar.styled";
-import { Button } from "../styles/Button.styled";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineClose } from "react-icons/md";
+import {
+  BackdropContainer,
+  Container,
+} from "../../reuseableComponents/containerStyle";
+import { NavbarContent, Logo, Links } from "./navbarStyle";
+import { Button } from "../../reuseableComponents/buttonStyle";
+// import { GiHamburgerMenu } from "react-icons/gi";
+// import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
   //   const [onIconClick, setOnIconClick] = useState(false);
