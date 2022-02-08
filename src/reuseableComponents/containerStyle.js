@@ -12,3 +12,7 @@ export const BackdropContainer = styled.div`
   color: ${({ theme }) => theme.colors.tertiary2};
   /* border: 2px solid red; */ ;
 `;
+
+export const GreyBackdrop = styled.div`
+  background-color: ${({ theme }) => theme.colors.tertiary1};
+`;
