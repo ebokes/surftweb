@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import LandingPage from "./components/home/landingPage/index";
 import Navbar from "./components/navbar/index";
 import WorkPage from "./components/home/workPage/index";
+import ProjectPage from "./components/home/projectPage/index";
 
 const theme = {
   colors: {
@@ -34,6 +35,7 @@ function App() {
         <Navbar />
         <LandingPage />
         <WorkPage />
+        <ProjectPage />
       </Fragment>
     </ThemeProvider>
   );

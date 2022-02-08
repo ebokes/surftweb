@@ -5,7 +5,7 @@ import {
   BackdropContainer,
 } from "../../../reuseableComponents/containerStyle";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import illustration from "../../../assets/images/Illustration.svg";
+import illustration from "../../../images/Illustration.svg";
 import { Button } from "../../../reuseableComponents/buttonStyle";
 
 const LandingPage = () => {
