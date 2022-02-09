@@ -35,8 +35,10 @@ function WorkPage() {
                     </div>
                   </div>
                 </div>
-                <h5>{item.heading}</h5>
-                <p>{item.text}</p>
+                <div className="writeup">
+                  <h5>{item.heading}</h5>
+                  <p>{item.text}</p>
+                </div>
               </List>
             ))}
           </Col2>
