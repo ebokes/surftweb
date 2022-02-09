@@ -5,6 +5,7 @@ import LandingPage from "./components/home/landingPage/index";
 import Navbar from "./components/navbar/index";
 import WorkPage from "./components/home/workPage/index";
 import ProjectPage from "./components/home/projectPage/index";
+import FeaturesPage from "./components/home/featuresPage/index";
 
 const theme = {
   colors: {
@@ -36,6 +37,7 @@ function App() {
         <LandingPage />
         <WorkPage />
         <ProjectPage />
+        <FeaturesPage />
       </Fragment>
     </ThemeProvider>
   );

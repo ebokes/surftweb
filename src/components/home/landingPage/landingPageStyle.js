@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 19rem 0 12rem 0;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     flex-direction: column;

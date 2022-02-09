@@ -18,7 +18,7 @@ const Navbar = () => {
         z="100"
         height="7.8rem"
       >
-        <Container>
+        <Container pad="0 0 0 0">
           <NavbarContent>
             <Logo>
               <h2>Surftweb</h2>

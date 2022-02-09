@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const WorkPageContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 12.8rem 0 12.8rem 0;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     flex-direction: column;

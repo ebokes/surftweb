@@ -3,9 +3,7 @@ import project2 from "../../../images/galleryImg2.png";
 import project3 from "../../../images/galleryImg3.png";
 import project1 from "../../../images/galleryImg1.png";
 
-export const ProjectPageContainer = styled.div`
-  padding: 12.8rem 0 12.8rem 0;
-`;
+export const ProjectPageContainer = styled.div``;
 
 export const Title = styled.div`
   display: flex;

@@ -12,7 +12,7 @@ const LandingPage = () => {
   return (
     <div>
       <BackdropContainer bg="#1C1E53" color="#fff">
-        <Container>
+        <Container pad="17rem 0 10rem 0">
           <Row>
             <Left>
               <div>
