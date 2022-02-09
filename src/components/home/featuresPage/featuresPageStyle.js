@@ -35,7 +35,11 @@ export const Feature = styled.div`
     width: 48%;
   }
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    width: 70%;
+    width: 40rem;
+    margin: 0 auto 3.2rem auto;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
     margin: 0 auto 3.2rem auto;
   }
 `;
