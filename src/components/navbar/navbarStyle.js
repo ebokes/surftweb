@@ -4,13 +4,14 @@ export const NavbarContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.6rem;
+  padding: 1.6rem 0 1.6rem 0;
   position: fixed;
   height: 7.8rem;
   background-color: ${({ theme }) => theme.colors.primary2};
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
+
   /* border: 2px solid yellow; */
 
   nav {

@@ -3,13 +3,13 @@ import { WorkPageContainer, Col1, Col2, List } from "./workPageStyle";
 import workData from "../../../data/workPageData";
 import {
   Container,
-  GreyBackdrop,
+  BackdropContainer,
 } from "../../../reuseableComponents/containerStyle";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 function WorkPage() {
   return (
-    <GreyBackdrop>
+    <BackdropContainer>
       <Container>
         <WorkPageContainer>
           <Col1>
@@ -42,7 +42,7 @@ function WorkPage() {
           </Col2>
         </WorkPageContainer>
       </Container>
-    </GreyBackdrop>
+    </BackdropContainer>
   );
 }
 

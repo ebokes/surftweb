@@ -11,7 +11,7 @@ import { Button } from "../../../reuseableComponents/buttonStyle";
 const LandingPage = () => {
   return (
     <div>
-      <BackdropContainer>
+      <BackdropContainer bg="#1C1E53" color="#fff">
         <Container>
           <Row>
             <Left>

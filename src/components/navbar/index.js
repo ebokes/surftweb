@@ -9,19 +9,15 @@ import { Button } from "../../reuseableComponents/buttonStyle";
 // import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
-  //   const [onIconClick, setOnIconClick] = useState(false);
-  //   const handleClick = () => setOnIconClick(!onIconClick);
-  //   const closeMenuLink = () => setOnIconClick(true);
-
-  //   {
-  /* <ul className={onClick ? "openMenu" : "closeMenu"}> */
-  //   }
-  //   {
-  /* <a onClick={closeMenuLink} className="active" href="/"> */
-  //   }
   return (
     <div>
-      <BackdropContainer>
+      <BackdropContainer
+        bg="#1C1E53"
+        color="#fff"
+        position="fixed"
+        z="100"
+        height="7.8rem"
+      >
         <Container>
           <NavbarContent>
             <Logo>

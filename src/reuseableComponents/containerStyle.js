@@ -8,11 +8,12 @@ export const Container = styled.div`
 `;
 
 export const BackdropContainer = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary2};
-  color: ${({ theme }) => theme.colors.tertiary2};
+  background-color: ${({ bg }) => bg || "#F4F6FC"};
+  color: ${({ color }) => color || "#000"};
+  position: ${({ position }) => position || "static"};
+  margin: 0 auto;
+  z-index: ${({ z }) => z || "0"};
+  height: ${({ height }) => height || "fit-content"};
+  width: 100%;
   /* border: 2px solid red; */ ;
-`;
-
-export const GreyBackdrop = styled.div`
-  background-color: ${({ theme }) => theme.colors.tertiary1};
 `;
