@@ -6,7 +6,6 @@ export const WorkPageContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     flex-direction: column;
-    padding: 6rem 0 6rem 0;
   }
 `;
 
@@ -115,5 +114,6 @@ export const List = styled.div`
     font-weight: 500;
     line-height: 4.8rem;
     color: ${({ theme }) => theme.colors.primary1};
+    margin: 1rem 0 1rem 0;
   }
 `;

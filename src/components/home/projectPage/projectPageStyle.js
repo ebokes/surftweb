@@ -50,6 +50,8 @@ export const Col2 = styled.div`
         rgba(28, 30, 83, 0.42) 103.96%
       ),
       url(${project2});
+    background-repeat: no-repeat;
+    max-width: 100%;
 
     section {
       /* margin: 1rem 0 4.5rem 5.6rem; */

@@ -23,7 +23,7 @@ const ProjectPage = () => {
           </a>
         </Title>
         <ProjectGallery>
-          <Col1>{/* <img src={project1} alt="project snapshot" /> */}</Col1>
+          <Col1></Col1>
           <Col2>
             <div>
               <section>

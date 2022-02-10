@@ -12,6 +12,13 @@ export const GlobalStyle = createGlobalStyle`
 }
 html {
     font-size: 62.5%;
+
+    /* @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    font-size: 58%
+  }
+    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    font-size: 50%
+  } */
 }
 
 a{
