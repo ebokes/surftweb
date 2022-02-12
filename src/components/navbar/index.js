@@ -1,14 +1,20 @@
-// import { useState } from "react";
+import { useState } from "react";
 import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import { NavbarContent, Logo, Links } from "./navbarStyle";
-import { Button } from "../../reuseableComponents/buttonStyle";
-// import { GiHamburgerMenu } from "react-icons/gi";
-// import { MdOutlineClose } from "react-icons/md";
+import { NavbarContent, Logo, Links, MenuButton, CButton } from "./navbarStyle";
+// import { Button } from "../../reuseableComponents/buttonStyle";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleClick = () => setToggleMenu((prevState) => !prevState);
+
+  // <Logo/> :<Link/>;
+
   return (
     <div>
       <BackdropContainer
@@ -24,6 +30,7 @@ const Navbar = () => {
               <h2>Surftweb</h2>
             </Logo>
             <nav>
+              {/* <div className="link"> */}
               <Links>
                 <li>
                   <a className="active" href="/">
@@ -39,20 +46,31 @@ const Navbar = () => {
                 <li>
                   <a href="/pricing">Pricing</a>
                 </li>
+                <li>
+                  <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contactus">
+                    Contact Us
+                  </CButton>
+                </li>
+                {/* <Button
+                  bg="#1C1E53"
+                  color="#fff"
+                  border="2px solid #F4F6FC33"
+                  padding="1rem 3rem"
+                  bgh="rgba(255, 255, 255, 0.1)"
+                  href="/contactus"
+                >
+                  Contact us
+                </Button> */}
               </Links>
-              {/* <GiHamburgerMenu />
-              <MdOutlineClose /> */}
-              <Button
-                bg="#1C1E53"
-                color="#fff"
-                border="2px solid #F4F6FC33"
-                padding="1rem 3rem"
-                bgh="rgba(255, 255, 255, 0.1)"
-                href="/contactus"
-              >
-                Contact us
-              </Button>
+              {/* </div> */}
             </nav>
+            <MenuButton onClick={handleClick}>
+              {toggleMenu ? (
+                <GiHamburgerMenu fontSize="2.8rem" />
+              ) : (
+                <MdOutlineClose fontSize="2.8rem" />
+              )}
+            </MenuButton>
           </NavbarContent>
         </Container>
       </BackdropContainer>

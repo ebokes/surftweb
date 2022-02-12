@@ -22,6 +22,7 @@ const theme = {
     tertiary3: "#000",
     tertiary4: "#1B1C2B",
     tertiary5: "rgba(255, 255, 255, 0.7)",
+    tertiary6: "#F4F6FC33",
   },
 
   mediaQuery: {
