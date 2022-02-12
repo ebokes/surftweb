@@ -6,6 +6,8 @@ import Navbar from "./components/navbar/index";
 import WorkPage from "./components/home/workPage/index";
 import ProjectPage from "./components/home/projectPage/index";
 import FeaturesPage from "./components/home/featuresPage/index";
+import ReviewsPage from "./components/home/reviewsPage/index";
+import FaqPage from "./components/home/faqPage/index";
 
 const theme = {
   colors: {
@@ -38,6 +40,8 @@ function App() {
         <WorkPage />
         <ProjectPage />
         <FeaturesPage />
+        <ReviewsPage />
+        <FaqPage />
       </Fragment>
     </ThemeProvider>
   );
