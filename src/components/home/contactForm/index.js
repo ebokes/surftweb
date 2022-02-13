@@ -13,7 +13,6 @@ function ContactForm() {
     <Container>
       <ContactFormContainer>
         <Col1>
-          {/* <Content> */}
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
@@ -22,10 +21,8 @@ function ContactForm() {
               enim.
             </p>
           </div>
-          {/* </Content> */}
         </Col1>
         <Col2>
-          {/* <Content> */}
           <div>
             <h5>Send inquiry</h5>
             <p>
@@ -56,7 +53,6 @@ function ContactForm() {
               </span>
             </SubLink>
           </div>
-          {/* </Content> */}
         </Col2>
       </ContactFormContainer>
     </Container>

@@ -23,6 +23,10 @@ export const Col1 = styled.div`
     margin: 0 auto;
     width: 70%;
 
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      width: 85%;
+    }
+
     h1 {
       font-size: 5.4rem;
       font-weight: 600;
@@ -50,9 +54,10 @@ export const Col2 = styled.div`
     padding: 9rem 0;
     width: 70%;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      width: 85%;
+    }
 
     h5 {
       font-size: 3.2rem;
@@ -75,19 +80,22 @@ export const Col2 = styled.div`
       input {
         background-color: ${({ theme }) => theme.colors.primary2};
         width: 100%;
-        height: 6.4rem;
+        /* height: 6.4rem; */
         border-radius: 0.8rem;
-        border: 1.5px solid #ffffff0d;
+        border: 1.5px solid ${({ theme }) => theme.colors.tertiary6};
         outline: none;
         margin-top: 1.6rem;
-        padding-left: 2rem;
+        /* padding-left: 2rem; */
         color: ${({ theme }) => theme.colors.tertiary2};
+        padding: 2rem 2rem;
 
         &::placeholder {
-          color: ${({ theme }) => theme.colors.tertiary6};
+          color: ${({ theme }) => theme.colors.tertiary2};
+          opacity: 0.6;
         }
 
         &:focus {
+          border-bottom: 2px solid #fff;
           background-color: ${({ theme }) => theme.colors.tertiary6};
           color: ${({ theme }) => theme.colors.tertiary2};
         }

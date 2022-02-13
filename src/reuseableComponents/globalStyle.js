@@ -35,4 +35,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1, h2,h3, h4, h5, a, p{
+    &::selection {
+      background-color: ${({ theme }) => theme.colors.primary2};
+      color: ${({ theme }) => theme.colors.tertiary2};
+    }
+}
+
 `;
