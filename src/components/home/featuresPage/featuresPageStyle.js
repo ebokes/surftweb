@@ -4,14 +4,29 @@ export const FeaturesPageContainer = styled.div`
   .title {
     text-align: center;
     p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      opacity: 0.7;
     }
     h1 {
-      width: 60%;
+      width: 50%;
       display: inline-block;
       margin-bottom: 4.7rem;
+      font-size: 4.8rem;
+      font-weight: 600;
+      line-height: 6.4rem;
+
+      @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+        font-size: 3rem;
+        line-height: 4rem;
+        width: 80%;
+      }
 
       @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        font-size: 2.4rem;
+        font-size: 3rem;
+        line-height: 4rem;
+        width: 60%;
       }
     }
   }
@@ -21,8 +36,6 @@ export const Features = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* width: 100%;
-  column-gap: 5%; */
   row-gap: 5%;
 `;
 
@@ -52,10 +65,18 @@ export const Content = styled.div`
 
   h4 {
     font-weight: 500;
+    font-size: 2.4rem;
     margin: 1.2rem 0 1.2rem 0;
   }
 
   img {
     width: 3.5rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    opacity: 0.7;
   }
 `;

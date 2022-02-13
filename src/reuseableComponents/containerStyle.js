@@ -19,5 +19,6 @@ export const BackdropContainer = styled.div`
   z-index: ${({ z }) => z || "0"};
   height: ${({ height }) => height || "fit-content"};
   width: 100%;
+  opacity: ${({ opacity }) => opacity || "1"};
   /* border: 2px solid red; */ ;
 `;
