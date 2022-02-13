@@ -5,6 +5,12 @@ export const FooterContainer = styled.div`
   column-gap: 25%;
   color: ${({ theme }) => theme.colors.tertiary2};
 
+  & > div p {
+    font-weight: 400;
+    line-height: 2.8rem;
+    opacity: 0.8;
+  }
+
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     flex-direction: column;
     column-gap: 0;
@@ -23,6 +29,12 @@ export const Col1 = styled.div`
 
 export const Col2 = styled.div`
   width: 33%;
+
+  /* & > div p {
+    font-weight: 400;
+    line-height: 2.8rem;
+    opacity: 0.8;
+  } */
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 40%;
