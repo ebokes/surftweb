@@ -5,12 +5,7 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   padding: ${({ pad }) => pad || "10rem 0 10rem 0"};
-  /* padding: 12.8rem 0 12.8rem 0; */
-  /* border: 2px solid green; */
 
-  /* @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    padding: 6rem 0 6rem 0;
-  } */
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 95%;
   }
