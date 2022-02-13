@@ -19,6 +19,85 @@ export const NavbarContent = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    .down {
+      display: none;
+
+      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+        flex-direction: column;
+        background-color: green;
+        /* background-color: ${({ theme }) => theme.colors.primary2}; */
+        position: absolute;
+        right: -100%;
+        top: 7.8rem;
+        width: 25rem;
+        padding-left: 1rem;
+        align-items: flex-start;
+        height: 100rem;
+      }
+    }
+
+    .up {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+        flex-direction: column;
+        background-color: ${({ theme }) => theme.colors.primary2};
+        position: absolute;
+        right: -7rem;
+        top: 7.8rem;
+        width: 25rem;
+        padding-left: 1rem;
+        align-items: flex-start;
+        height: 100rem;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-right: 4rem;
+
+          @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+            margin-right: 1.5rem;
+          }
+        }
+
+        @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+          margin-bottom: 2rem;
+          /* border-bottom: 0.2rem solid; */
+          padding-bottom: 1rem;
+          padding-right: 10rem;
+          position: relative;
+
+          a::before {
+            content: "";
+            width: 20rem;
+            height: 0.2rem;
+            bottom: 0.1rem;
+            left: 0.1rem;
+            background-color: ${({ theme }) => theme.colors.tertiary2};
+            position: absolute;
+          }
+        }
+
+        a {
+          color: ${({ theme }) => theme.colors.tertiary5};
+          transition: all 0.1s;
+        }
+
+        a.active,
+        a:hover {
+          color: ${({ theme }) => theme.colors.tertiary2};
+          &:not(:last-child) {
+            padding-bottom: 0.3rem;
+            border-bottom: 0.2rem solid;
+          }
+          @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -35,67 +114,9 @@ export const Logo = styled.span`
   width: 10%;
 `;
 
-export const Links = styled.ul`
-  display: flex;
-  align-items: center;
+// export const Links = styled.ul`
 
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    flex-direction: column;
-    background-color: ${({ theme }) => theme.colors.primary2};
-    position: absolute;
-    right: -7rem;
-    top: 7.8rem;
-    width: 25rem;
-    padding-left: 1rem;
-    align-items: flex-start;
-    height: 100rem;
-  }
-
-  li {
-    &:not(:last-child) {
-      margin-right: 4rem;
-
-      @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-        margin-right: 1.5rem;
-      }
-    }
-
-    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      margin-bottom: 2rem;
-      /* border-bottom: 0.2rem solid; */
-      padding-bottom: 1rem;
-      padding-right: 10rem;
-      position: relative;
-
-      a::before {
-        content: "";
-        width: 20rem;
-        height: 0.2rem;
-        bottom: 0.1rem;
-        left: 0.1rem;
-        background-color: ${({ theme }) => theme.colors.tertiary2};
-        position: absolute;
-      }
-    }
-
-    a {
-      color: ${({ theme }) => theme.colors.tertiary5};
-      transition: all 0.1s;
-    }
-
-    a.active,
-    a:hover {
-      color: ${({ theme }) => theme.colors.tertiary2};
-      &:not(:last-child) {
-        border-bottom: 0.2rem solid;
-        padding-bottom: 0.3rem;
-      }
-      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        border-bottom: none;
-      }
-    }
-  }
-`;
+// `;
 export const CButton = styled.a`
   background-color: ${({ theme }) => theme.colors.primary2};
   color: ${({ theme }) => theme.colors.tertiary2};

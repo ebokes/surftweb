@@ -30,8 +30,8 @@ const Navbar = () => {
               <h2>Surftweb</h2>
             </Logo>
             <nav>
-              {/* <div className="link"> */}
-              <Links>
+              <ul onClick={handleClick} className={toggleMenu ? "down" : "up"}>
+                {/* <Links onClick={handleClick}> */}
                 <li>
                   <a className="active" href="/">
                     Home
@@ -61,8 +61,8 @@ const Navbar = () => {
                 >
                   Contact us
                 </Button> */}
-              </Links>
-              {/* </div> */}
+                {/* </Links> */}
+              </ul>
             </nav>
             <MenuButton onClick={handleClick}>
               {toggleMenu ? (

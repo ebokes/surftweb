@@ -9,16 +9,16 @@ import { FaqPageContainer, Col1, Col2 } from "./faqPageStyle";
 import reviewsData from "../../../data/reviewsPageData";
 
 function FaqPage() {
-  const [onClick, setOnClick] = React.useState(false);
+  const [toggle, setToggle] = React.useState(false);
   const toggleDrop = () => {
-    setOnClick(!onClick);
+    setToggle((prevState) => !prevState);
   };
 
-  const [id, setId] = React.useState(false);
-  const targetId = () => {
-    setId(reviewsData.id.length === 1 ? !id : id);
-    console.log(targetId());
-  };
+  // const [id, setId] = React.useState(false);
+  // const targetId = () => {
+  //   setId(reviewsData.id.length === 1 ? !id : id);
+  //   console.log(targetId());
+  // };
   return (
     <BackdropContainer>
       <Container>
@@ -34,13 +34,16 @@ function FaqPage() {
                   <h4 className="sn">0{review.id}</h4>
                   <div className="quest-ans">
                     <h4 className="question">{review.question}</h4>
-                    <p onClick={targetId} className={id ? "answer" : "no-ans"}>
+                    <p
+                      onClick={toggleDrop}
+                      className={toggle ? "answer" : "no-ans"}
+                    >
                       {review.answer}
                     </p>
                   </div>
                 </div>
                 <div className="toggle" onClick={toggleDrop}>
-                  {onClick ? <MdClose /> : <BiPlus />}
+                  {toggle ? <MdClose /> : <BiPlus />}
                 </div>
               </div>
             ))}
