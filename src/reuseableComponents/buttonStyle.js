@@ -10,6 +10,7 @@ export const Button = styled.a`
   font-weight: 600;
   line-height: 3.2rem;
   font-size: 1.8rem;
+  text-align: center;
 
   &:hover {
     background-color: ${({ bgh }) => bgh || "#FDE4A6"};

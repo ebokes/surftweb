@@ -8,6 +8,7 @@ import ProjectPage from "./components/home/projectPage/index";
 import FeaturesPage from "./components/home/featuresPage/index";
 import ReviewsPage from "./components/home/reviewsPage/index";
 import FaqPage from "./components/home/faqPage/index";
+import ContactForm from "./components/home/contactForm/index";
 
 const theme = {
   colors: {
@@ -43,6 +44,7 @@ function App() {
         <FeaturesPage />
         <ReviewsPage />
         <FaqPage />
+        <ContactForm />
       </Fragment>
     </ThemeProvider>
   );

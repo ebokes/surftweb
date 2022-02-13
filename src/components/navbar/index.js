@@ -3,7 +3,7 @@ import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import { NavbarContent, Logo, Links, MenuButton, CButton } from "./navbarStyle";
+import { NavbarContent, Logo, MenuButton, CButton } from "./navbarStyle";
 // import { Button } from "../../reuseableComponents/buttonStyle";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";

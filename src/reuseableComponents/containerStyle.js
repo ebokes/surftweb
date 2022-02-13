@@ -11,6 +11,9 @@ export const Container = styled.div`
   /* @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     padding: 6rem 0 6rem 0;
   } */
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 95%;
+  }
 `;
 
 export const BackdropContainer = styled.div`
