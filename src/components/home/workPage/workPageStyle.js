@@ -28,13 +28,13 @@ export const Col1 = styled.div`
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
-  a {
+  /* a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 18rem;
     color: ${({ theme }) => theme.colors.primary3};
-  }
+  } */
 `;
 
 export const Col2 = styled.div`

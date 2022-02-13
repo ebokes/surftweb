@@ -7,6 +7,7 @@ import {
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import illustration from "../../../images/Illustration.svg";
 import { Button } from "../../../reuseableComponents/buttonStyle";
+import { SubLink } from "../../../reuseableComponents/subLinkStyle";
 
 const LandingPage = () => {
   return (
@@ -21,11 +22,16 @@ const LandingPage = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
                 </p>
-                <span>
+                <span className="grp">
                   <Button href="/viewourwork">View our work</Button>
-                  <a href="/pricing">
-                    View Pricing <HiOutlineArrowNarrowRight size={30} />
-                  </a>
+                  <div>
+                    <SubLink color="#fff" mlm="20%" mlt="1rem" href="/pricing">
+                      View Pricing
+                      <span>
+                        <HiOutlineArrowNarrowRight size={30} />
+                      </span>
+                    </SubLink>
+                  </div>
                 </span>
               </div>
             </Left>

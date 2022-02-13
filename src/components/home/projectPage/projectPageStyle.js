@@ -62,9 +62,9 @@ export const Col2 = styled.div`
         width: 16rem;
       }
 
-      a {
+      /* a {
         color: ${({ theme }) => theme.colors.secondary1};
-      }
+      } */
       width: 97%;
       height: 50%;
       background-repeat: no-repeat;

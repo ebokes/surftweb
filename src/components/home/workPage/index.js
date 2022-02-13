@@ -5,6 +5,8 @@ import {
   Container,
   BackdropContainer,
 } from "../../../reuseableComponents/containerStyle";
+
+import { SubLink } from "../../../reuseableComponents/subLinkStyle";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 function WorkPage() {
@@ -18,10 +20,12 @@ function WorkPage() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
-            <a href="/contactus">
+            <SubLink margin="0" href="/contactus">
               Get in touch with us
-              <HiOutlineArrowNarrowRight />
-            </a>
+              <span>
+                <HiOutlineArrowNarrowRight />
+              </span>
+            </SubLink>
           </Col1>
           <Col2>
             {workData.map((item) => (

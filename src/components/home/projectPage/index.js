@@ -8,9 +8,7 @@ import {
   ProjectGallery,
 } from "../projectPage/projectPageStyle";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-// import project1 from "../../../images/galleryImg1.png";
-// import project2 from "../../../images/galleryImg2.png";
-// import project3 from "../../../images/galleryImg3.png";
+import { SubLink } from "../../../reuseableComponents/subLinkStyle";
 
 const ProjectPage = () => {
   return (
@@ -18,9 +16,12 @@ const ProjectPage = () => {
       <ProjectPageContainer>
         <Title>
           <h1>View our projects</h1>
-          <a href="/projects">
-            View More <HiOutlineArrowNarrowRight />
-          </a>
+          <SubLink margin="0" href="/projects">
+            View More
+            <span>
+              <HiOutlineArrowNarrowRight />
+            </span>
+          </SubLink>
         </Title>
         <ProjectGallery>
           <Col1></Col1>
@@ -28,10 +29,12 @@ const ProjectPage = () => {
             <div>
               <section>
                 <h4>Unisaas Website Design</h4>
-                <a href="/portfolio">
+                <SubLink color="#FCD980" href="/portfolio">
                   View portfolio
-                  <HiOutlineArrowNarrowRight />
-                </a>
+                  <span>
+                    <HiOutlineArrowNarrowRight />
+                  </span>
+                </SubLink>
               </section>
             </div>
             <aside></aside>

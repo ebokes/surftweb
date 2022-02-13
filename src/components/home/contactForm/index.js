@@ -1,10 +1,12 @@
 import React from "react";
-import { ContactFormContainer, Col1, Col2, Content } from "./ContactFormStyle";
+import { ContactFormContainer, Col1, Col2 } from "./ContactFormStyle";
 import {
   //   BackdropContainer,
   Container,
 } from "../../../reuseableComponents/containerStyle";
 import { Button } from "../../../reuseableComponents/buttonStyle";
+import { SubLink } from "../../../reuseableComponents/subLinkStyle";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 function ContactForm() {
   return (
@@ -47,6 +49,12 @@ function ContactForm() {
               <span></span>
               <Button padding="1.6rem 0">Send an Inquiry</Button>
             </form>
+            <SubLink color="#fff" mld="29%">
+              Get in touch with us
+              <span>
+                <HiOutlineArrowNarrowRight />
+              </span>
+            </SubLink>
           </div>
           {/* </Content> */}
         </Col2>

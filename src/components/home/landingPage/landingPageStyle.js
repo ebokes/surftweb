@@ -26,32 +26,21 @@ export const Left = styled.div`
     margin-bottom: 4.8rem;
     line-height: 2.8rem;
   }
-  span {
+  .grp {
     display: flex;
     justify-content: space-between;
+    width: 40rem;
     align-items: center;
-    width: 43rem;
 
     @media (max-width: 506px) {
       display: inline-block;
-      text-align: center;
-      width: 24rem;
-    }
-
-    & a + a {
-      display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      width: 15rem;
-      background-color: transparent;
-      color: ${({ theme }) => theme.colors.tertiary1};
-      padding: 0;
-      font-weight: 500;
-      font-size: 1.8rem;
+      width: 24rem;
 
-      @media (max-width: 506px) {
-        margin-left: 5rem;
-        margin-top: 3rem;
+      div {
+        align-self: center;
+        display: flex;
       }
     }
   }
