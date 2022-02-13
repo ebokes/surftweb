@@ -10,6 +10,7 @@ import ReviewsPage from "./components/home/reviewsPage/index";
 import FaqPage from "./components/home/faqPage/index";
 import ContactForm from "./components/home/contactForm/index";
 import FooterPage from "./components/footer/index";
+import BlogPage from "./components/home/blogPage/index";
 
 const theme = {
   colors: {
@@ -46,6 +47,7 @@ function App() {
         <ReviewsPage />
         <FaqPage />
         <ContactForm />
+        <BlogPage />
         <FooterPage />
       </Fragment>
     </ThemeProvider>
