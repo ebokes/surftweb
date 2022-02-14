@@ -6,10 +6,14 @@ import { FaqPageContainer, Col1, Col2 } from "./faqPageStyle";
 import reviewsData from "../../../data/reviewsPageData";
 
 function FaqPage() {
-  const [toggle, setToggle] = React.useState(false);
-  const toggleDrop = () => {
-    setToggle((prevState) => !prevState);
+  const [clickedIndex, setClickedIndex] = React.useState({});
+  const handleClick = (index) => () => {
+    setClickedIndex((state) => ({
+      ...state,
+      [index]: !state[index],
+    }));
   };
+
   return (
     <Container>
       <FaqPageContainer>
@@ -18,23 +22,20 @@ function FaqPage() {
           <a href="/contact">Contact us for more info</a>
         </Col1>
         <Col2>
-          {reviewsData.map((review) => (
-            <div key={review.id} className="question-container">
+          {reviewsData.map((item, index) => (
+            <div key={item.id} className="question-container">
               <div className="no-quest">
-                <h4 className="sn">0{review.id}</h4>
+                <h4 className="sn">0{item.id}</h4>
                 <div className="quest-ans">
-                  <h4 className="question">{review.question}</h4>
-                  <p
-                    onClick={toggleDrop}
-                    className={toggle ? "answer" : "no-ans"}
-                  >
-                    {review.answer}
+                  <h4 className="question">{item.question}</h4>
+                  <p className={clickedIndex[index] ? "answer" : "no-ans"}>
+                    {item.answer}
                   </p>
                   <div className="line"></div>
                 </div>
               </div>
-              <div className="toggle" onClick={toggleDrop}>
-                {toggle ? <MdClose /> : <BiPlus />}
+              <div className="toggle" onClick={handleClick(index)}>
+                {clickedIndex[index] ? <MdClose /> : <BiPlus />}
               </div>
             </div>
           ))}
