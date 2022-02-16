@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/navbar/index";
-import Home from "./components/home/Home";
 import FooterPage from "./components/footer/index";
-import AboutUs from "./components/aboutus/AboutUs";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
 
 // import Slider from "./components/Slider";
 

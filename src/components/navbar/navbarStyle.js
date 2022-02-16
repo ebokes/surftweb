@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const NavbarContent = styled.div`
   display: flex;
@@ -42,7 +43,8 @@ export const NavbarContent = styled.div`
       align-items: center;
 
       @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        flex-direction: column;
+        display: none;
+        /* flex-direction: column;
         background-color: ${({ theme }) => theme.colors.primary2};
         position: absolute;
         right: -7rem;
@@ -50,7 +52,7 @@ export const NavbarContent = styled.div`
         width: 25rem;
         padding-left: 1rem;
         align-items: flex-start;
-        height: 100rem;
+        height: 100rem; */
       }
 
       li {
@@ -68,37 +70,36 @@ export const NavbarContent = styled.div`
           padding-bottom: 1rem;
           padding-right: 10rem;
           position: relative;
-
-          Link::before {
-            content: "";
-            width: 20rem;
-            height: 0.2rem;
-            bottom: 0.1rem;
-            left: 0.1rem;
-            background-color: ${({ theme }) => theme.colors.tertiary2};
-            position: absolute;
-          }
-        }
-
-        Link {
-          color: ${({ theme }) => theme.colors.tertiary5};
-          transition: all 0.1s;
-        }
-
-        Link.active,
-        Link:hover {
-          color: ${({ theme }) => theme.colors.tertiary2};
-          &:not(:last-child) {
-            padding-bottom: 0.3rem;
-            border-bottom: 0.2rem solid;
-          }
-          @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-            border-bottom: none;
-          }
         }
       }
     }
   }
+`;
+
+export const NavLinks = styled(LinkR)`
+  color: ${({ theme }) => theme.colors.tertiary5};
+  transition: all 0.1s;
+
+  .active,
+  :hover {
+    color: ${({ theme }) => theme.colors.tertiary2};
+    &:not(:last-child) {
+      padding-bottom: 0.3rem;
+      border-bottom: 0.2rem solid;
+    }
+    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      border-bottom: none;
+    }
+  }
+  /* &::before {
+    content: "";
+    width: 20rem;
+    height: 0.2rem;
+    bottom: 0.1rem;
+    left: 0.1rem;
+    background-color: ${({ theme }) => theme.colors.tertiary2};
+    position: absolute;
+  } */
 `;
 
 export const MenuButton = styled.div`
@@ -114,9 +115,6 @@ export const Logo = styled.span`
   width: 10%;
 `;
 
-// export const Links = styled.ul`
-
-// `;
 export const CButton = styled.a`
   background-color: ${({ theme }) => theme.colors.primary2};
   color: ${({ theme }) => theme.colors.tertiary2};
@@ -138,17 +136,3 @@ export const CButton = styled.a`
     color: ${({ theme }) => theme.colors.tertiary2};
   }
 `;
-
-// Button{
-//   display: none;
-// }
-
-// .down{
-//   display: block;
-// }
-
-// .up{
-//   display: none;
-// }
-
-// className={toggleMenu ? 'up': 'down'}

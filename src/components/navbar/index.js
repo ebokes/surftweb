@@ -3,15 +3,20 @@ import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import { NavbarContent, Logo, MenuButton, CButton } from "./navbarStyle";
-// import { Button } from "../../reuseableComponents/buttonStyle";
+import {
+  NavbarContent,
+  Logo,
+  MenuButton,
+  CButton,
+  NavLinks,
+} from "./navbarStyle";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
 
-  const handleClick = () => setToggleMenu((prevState) => !prevState);
+  const handleClick = () => setToggleMenu((prevState) => prevState);
 
   return (
     <div>
@@ -28,37 +33,26 @@ const Navbar = () => {
               <h2>Surftweb</h2>
             </Logo>
             <nav>
-              <ul onClick={handleClick} className={toggleMenu ? "down" : "up"}>
+              <ul onClick={handleClick} className={toggleMenu ? "up" : "down"}>
                 <li>
-                  <a className="active" href="/">
+                  <NavLinks className="active" to="/">
                     Home
-                  </a>
+                  </NavLinks>
                 </li>
                 <li>
-                  <a href="/aboutus">About Us</a>
+                  <NavLinks to="/about-us">About Us</NavLinks>
                 </li>
                 <li>
-                  <a href="/features">Features</a>
+                  <NavLinks to="/features">Features</NavLinks>
                 </li>
                 <li>
-                  <a href="/pricing">Pricing</a>
+                  <NavLinks to="/pricing">Pricing</NavLinks>
                 </li>
                 <li>
                   <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contactus">
                     Contact Us
                   </CButton>
                 </li>
-                {/* <Button
-                  bg="#1C1E53"
-                  color="#fff"
-                  border="2px solid #F4F6FC33"
-                  padding="1rem 3rem"
-                  bgh="rgba(255, 255, 255, 0.1)"
-                  href="/contactus"
-                >
-                  Contact us
-                </Button> */}
-                {/* </Links> */}
               </ul>
             </nav>
             <MenuButton onClick={handleClick}>
