@@ -26,7 +26,6 @@ export const NavbarContent = styled.div`
       @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
         flex-direction: column;
         background-color: green;
-        /* background-color: ${({ theme }) => theme.colors.primary2}; */
         position: absolute;
         right: -100%;
         top: 7.8rem;
@@ -34,6 +33,7 @@ export const NavbarContent = styled.div`
         padding-left: 1rem;
         align-items: flex-start;
         height: 100rem;
+        /* background-color: ${({ theme }) => theme.colors.primary2}; */
       }
     }
 
@@ -69,7 +69,7 @@ export const NavbarContent = styled.div`
           padding-right: 10rem;
           position: relative;
 
-          a::before {
+          Link::before {
             content: "";
             width: 20rem;
             height: 0.2rem;
@@ -80,13 +80,13 @@ export const NavbarContent = styled.div`
           }
         }
 
-        a {
+        Link {
           color: ${({ theme }) => theme.colors.tertiary5};
           transition: all 0.1s;
         }
 
-        a.active,
-        a:hover {
+        Link.active,
+        Link:hover {
           color: ${({ theme }) => theme.colors.tertiary2};
           &:not(:last-child) {
             padding-bottom: 0.3rem;

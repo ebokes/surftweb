@@ -3,7 +3,7 @@ import { Container } from "../../../reuseableComponents/containerStyle";
 import { MdClose } from "react-icons/md";
 import { BiPlus } from "react-icons/bi";
 import { FaqPageContainer, Col1, Col2 } from "./faqPageStyle";
-import reviewsData from "../../../data/reviewsPageData";
+import faqData from "../../../data/faqPageData";
 
 function FaqPage() {
   const [clickedIndex, setClickedIndex] = React.useState({});
@@ -22,7 +22,7 @@ function FaqPage() {
           <a href="/contact">Contact us for more info</a>
         </Col1>
         <Col2>
-          {reviewsData.map((item, index) => (
+          {faqData.map((item, index) => (
             <div key={item.id} className="question-container">
               <div className="no-quest">
                 <h4 className="sn">0{item.id}</h4>

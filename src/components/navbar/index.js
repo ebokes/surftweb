@@ -13,8 +13,6 @@ const Navbar = () => {
 
   const handleClick = () => setToggleMenu((prevState) => !prevState);
 
-  // <Logo/> :<Link/>;
-
   return (
     <div>
       <BackdropContainer
@@ -31,7 +29,6 @@ const Navbar = () => {
             </Logo>
             <nav>
               <ul onClick={handleClick} className={toggleMenu ? "down" : "up"}>
-                {/* <Links onClick={handleClick}> */}
                 <li>
                   <a className="active" href="/">
                     Home

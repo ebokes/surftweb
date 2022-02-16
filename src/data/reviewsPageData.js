@@ -1,33 +1,29 @@
+import woman from "../images/woman.png";
+
 const reviewsData = [
   {
-    id: 1,
-    question: "How much time does it take?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    img: woman,
+    name: "Jenny Wilson",
+    position: "Vice President",
   },
   {
-    id: 2,
-    question: "What is your class naming convention?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, velit perspiciatis deserunt officia tempora aliquid? Debitis ipsum autem cum itaque.",
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    img: woman,
+    name: "Elon Musk",
+    position: "CEO",
   },
   {
-    id: 3,
-    question: "How do you communicate?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolorem? Ea similique voluptatibus harum nisi!",
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    img: woman,
+    name: "Jeff Bezoss",
+    position: "Chairman",
   },
   {
-    id: 4,
-    question: "I have a bigger project. Can you handle it?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste odit ab qui in repellat officia animi nulla?",
-  },
-  {
-    id: 5,
-    question: "What is your class naming convention?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam quam, in amet, itaque modi quis unde exercitationem quisquam ad aperiam!",
+    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    img: woman,
+    name: "Mark Zukerberg",
+    position: "President",
   },
 ];
 export default reviewsData;

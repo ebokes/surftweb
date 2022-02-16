@@ -1,16 +1,13 @@
 import { Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
-import LandingPage from "./components/home/landingPage/index";
 import Navbar from "./components/navbar/index";
-import WorkPage from "./components/home/workPage/index";
-import ProjectPage from "./components/home/projectPage/index";
-import FeaturesPage from "./components/home/featuresPage/index";
-import ReviewsPage from "./components/home/reviewsPage/index";
-import FaqPage from "./components/home/faqPage/index";
-import ContactForm from "./components/home/contactForm/index";
+import Home from "./components/home/Home";
 import FooterPage from "./components/footer/index";
-import BlogPage from "./components/home/blogPage/index";
+import AboutUs from "./components/aboutus/AboutUs";
+
+// import Slider from "./components/Slider";
 
 const theme = {
   colors: {
@@ -36,21 +33,19 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Fragment>
-        <GlobalStyle />
-        <Navbar />
-        <LandingPage />
-        <WorkPage />
-        <ProjectPage />
-        <FeaturesPage />
-        <ReviewsPage />
-        <FaqPage />
-        <ContactForm />
-        <BlogPage />
-        <FooterPage />
-      </Fragment>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Fragment>
+          <GlobalStyle />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+          </Routes>
+          <FooterPage />
+        </Fragment>
+      </ThemeProvider>
+    </Router>
   );
 }
 
