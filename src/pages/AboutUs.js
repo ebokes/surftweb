@@ -1,7 +1,12 @@
 import React from "react";
+import Intro from "../components/aboutus/intro/index";
 
 const AboutUs = () => {
-  return <div>AboutUs</div>;
+  return (
+    <div>
+      <Intro />
+    </div>
+  );
 };
 
 export default AboutUs;
