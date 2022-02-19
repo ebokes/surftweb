@@ -87,8 +87,15 @@ export const Content = styled.div`
 
 export const Icons = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   img {
     max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  img + img {
+    margin-left: 2rem;
   }
 `;
