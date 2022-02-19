@@ -1,15 +1,12 @@
 import React from "react";
 import { WhoWeAreContainer, Col1, Col2, Row1, Row2 } from "./whoWeAreStyle";
-import {
-  BackdropContainer,
-  Container,
-} from "../../../reuseableComponents/containerStyle";
+import { Container } from "../../../reuseableComponents/containerStyle";
 
 const WhoWeAre = () => {
   return (
-    <BackdropContainer bg="#f4f5f5">
-      <Container>
-        <WhoWeAreContainer>
+    <Container>
+      <WhoWeAreContainer>
+        <div>
           <h4>Who we are</h4>
           <Row1>
             <Col1>
@@ -31,10 +28,10 @@ const WhoWeAre = () => {
               </p>
             </Col2>
           </Row1>
-          <Row2 />
-        </WhoWeAreContainer>
-      </Container>
-    </BackdropContainer>
+        </div>
+        <Row2 />
+      </WhoWeAreContainer>
+    </Container>
   );
 };
 
