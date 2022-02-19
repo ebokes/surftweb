@@ -14,7 +14,7 @@ const Goals = () => {
           {goalsData.map((item, index) => (
             <GoalsDataContainer
               key={index}
-              fld={index % 2 === 0 && "row-reverse"}
+              fld={index % 2 !== 0 && "row-reverse"}
               // style={{ flexDirection: index === 1 ? "row-reverse" : "row" }}
             >
               <Col1>

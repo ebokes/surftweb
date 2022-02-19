@@ -92,7 +92,7 @@ export const Icons = styled.div`
   align-items: center;
   img {
     max-width: 100%;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   img + img {

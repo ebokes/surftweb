@@ -8,7 +8,7 @@ export const GoalsDataContainer = styled.div`
   flex-direction: ${({ fld }) => fld || "row"};
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   &:not(:last-child) {
