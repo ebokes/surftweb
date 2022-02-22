@@ -15,6 +15,7 @@ export const Card = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     flex-direction: column;
+    /* width: 100%; */
   }
 
   .figure {
@@ -32,18 +33,22 @@ export const Card = styled.div`
       padding: 2rem 0;
     }
     @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      width: 80%;
+      width: 70%;
+      margin: 1rem auto;
+    }
+    @media (max-width: 500px) {
+      width: 95%;
     }
 
     img {
       max-width: 100%;
+      display: flex;
 
       @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
         max-width: 90%;
-        display: flex;
-        margin: auto;
-        /* justify-content: center;
-        align-items: center; */
+        justify-content: center;
+        align-items: center;
+        margin: 0.9rem auto;
       }
     }
 
@@ -60,8 +65,7 @@ export const Avatar = styled.figure`
   position: relative;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    width: 16.8rem;
-    height: 16.8rem;
+    clip-path: circle(45% at 50% 50%);
   }
 `;
 
