@@ -15,7 +15,6 @@ export const Card = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     flex-direction: column;
-    /* width: 100%; */
   }
 
   .figure {
