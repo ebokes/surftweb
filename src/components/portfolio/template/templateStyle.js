@@ -5,17 +5,27 @@ export const TemplateContainer = styled.div``;
 export const TemplateNav = styled.ul`
   display: flex;
   width: 44rem;
-  justify-content: space-between;
   margin: 0 auto 4.8rem auto;
+  justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
 
   & > li {
     .active {
       color: ${({ theme }) => theme.colors.primary3};
     }
 
-    a {
+    .nonactive {
       color: ${({ theme }) => theme.colors.primary2};
     }
+
+    /* a {
+      color: ${({ theme }) => theme.colors.primary2};
+    } */
   }
 `;
 
@@ -38,7 +48,7 @@ export const TemplateItem = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    width: 100%;
+    width: 90%;
   }
 
   h2 {
