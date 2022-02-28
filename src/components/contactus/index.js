@@ -1,6 +1,14 @@
 import React from "react";
 import { Container } from "../../reuseableComponents/containerStyle";
-import { ContactUsContainer, Row1, Row2 } from "./contactUsStyle";
+import {
+  ContactUsContainer,
+  Row1,
+  Row2,
+  Input,
+  Textarea,
+  SubmitBtn,
+  InputField,
+} from "./contactUsStyle";
 
 const index = () => {
   return (
@@ -14,7 +22,55 @@ const index = () => {
           </p>
         </Row1>
         <Row2>
-          <div></div>
+          <InputField action="">
+            <Input>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </Input>
+            <Input>
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your Email"
+              />
+            </Input>
+            <Input>
+              <label htmlFor="context">Context</label>
+              <input
+                type="text"
+                name="context"
+                id="context"
+                placeholder="Provide context"
+              />
+            </Input>
+            <Input>
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Select subject"
+              />
+            </Input>
+            <Textarea>
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write your question here"
+              ></textarea>
+            </Textarea>
+            <SubmitBtn type="button" value="Send Message" />
+          </InputField>
         </Row2>
       </ContactUsContainer>
     </Container>
