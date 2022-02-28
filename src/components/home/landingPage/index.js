@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div>
       <BackdropContainer bg="#1C1E53" color="#fff">
-        <Container pad="17rem 0 10rem 0">
+        <Container pad="17rem 0 10rem 0" padm="12rem 0 5rem 0">
           <Row>
             <Left>
               <div>
@@ -23,7 +23,7 @@ const LandingPage = () => {
                   do eiusmod tempor incididunt.
                 </p>
                 <span className="grp">
-                  <Button href="/viewourwork">View our work</Button>
+                  <Button href="/portfolio">View our work</Button>
                   <div>
                     <SubLink color="#fff" mlm="20%" mlt="1rem" href="/pricing">
                       View Pricing

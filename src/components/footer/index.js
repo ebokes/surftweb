@@ -3,21 +3,15 @@ import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import {
-  FooterContainer,
-  Col1,
-  Col2,
-  Contact,
-  Social,
-  Bottom,
-} from "./footerStyle";
+import { FooterContainer, Col1, Col2, Contact, Bottom } from "./footerStyle";
+import { SocialStyle, Handle } from "../../reuseableComponents/subLinkStyle";
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 function FooterPage() {
   return (
     <BackdropContainer bg="#1C1E53">
-      <Container pad="10rem 0 0 0">
+      <Container pad="10rem 0 0 0" padm="5rem 0 0 0">
         <FooterContainer>
           <Col1>
             <div>
@@ -36,19 +30,27 @@ function FooterPage() {
                 presence and help with your UX/UI design challenges.
               </p>
             </div>
-            <Social>
-              <MdFacebook size={25} />
-              <FaTwitter size={25} />
-              <FaInstagram size={25} />
-              <FaLinkedin size={25} />
-            </Social>
+            <SocialStyle>
+              <Handle href="https://facebook.com" target="_blank">
+                <MdFacebook size={25} />
+              </Handle>
+              <Handle href="https://twitter.com" target="_blank">
+                <FaTwitter size={25} />
+              </Handle>
+              <Handle href="https://instagram.com" target="_blank">
+                <FaInstagram size={25} />
+              </Handle>
+              <Handle href="https://linkedin.com" target="_blank">
+                <FaLinkedin size={25} />
+              </Handle>
+            </SocialStyle>
           </Col2>
         </FooterContainer>
         <Bottom>
           <Contact>
             <div>
               <h5>Email me at</h5>
-              <p>info@wsurftweb.com</p>
+              <p>info@surftweb.com</p>
             </div>
             <div>
               <h5>Call us on</h5>

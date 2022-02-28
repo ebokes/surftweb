@@ -15,7 +15,7 @@ import { Button } from "../../../reuseableComponents/buttonStyle";
 
 const PricingPlan = () => {
   return (
-    <Container>
+    <Container padm="12rem 0 5rem 0">
       <PricingPlanContainer>
         <Row1>
           <h2>Our Pricing Plans</h2>
@@ -58,7 +58,7 @@ const PricingPlan = () => {
                 </List>
                 <Button
                   href="#"
-                  padding="1.6rem 24%"
+                  padding="1.6rem 22%"
                   style={{
                     background: index % 2 === 0 && "#282938",
                     color: index % 2 === 0 && "#fff",

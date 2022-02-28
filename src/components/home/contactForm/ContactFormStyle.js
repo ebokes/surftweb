@@ -25,6 +25,7 @@ export const Col1 = styled.div`
 
     @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       width: 85%;
+      padding: 4rem 0;
     }
 
     h1 {
@@ -57,6 +58,7 @@ export const Col2 = styled.div`
 
     @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       width: 85%;
+      padding: 4rem 0;
     }
 
     h5 {

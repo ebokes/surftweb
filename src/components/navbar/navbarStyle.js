@@ -111,8 +111,9 @@ export const MenuButton = styled.div`
   }
 `;
 
-export const Logo = styled.span`
+export const Logo = styled(LinkR)`
   width: 10%;
+  color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
 export const CButton = styled.a`
@@ -132,7 +133,6 @@ export const CButton = styled.a`
   }
 
   &:hover {
-    /* background-color: rgba(255, 255, 255, 0.1); */
     color: ${({ theme }) => theme.colors.tertiary2};
   }
 `;

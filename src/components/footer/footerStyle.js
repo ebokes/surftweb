@@ -81,8 +81,11 @@ export const Contact = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
+    padding: 0.6rem 2rem;
+    height: 13rem;
   }
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
@@ -96,9 +99,9 @@ export const Contact = styled.div`
   }
 `;
 
-export const Social = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 16rem;
-  margin-top: 2.8rem;
-`;
+// export const Social = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   width: 16rem;
+//   margin-top: 2.8rem;
+// `;

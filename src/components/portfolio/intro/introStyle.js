@@ -44,10 +44,10 @@ export const Col1 = styled.div`
   }
 `;
 
-export const Social = styled.div`
-  width: 14.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-`;
+// export const Social = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   width: 14.7rem;
+//   align-items: center;
+//   margin: 0 auto;
+// `;

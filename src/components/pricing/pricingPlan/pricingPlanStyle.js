@@ -30,7 +30,6 @@ export const Row1 = styled.div`
 export const Row2 = styled.div`
   display: flex;
   justify-content: space-between;
-  /* width: 30%; */
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 46rem;
@@ -49,7 +48,6 @@ export const Card = styled.div`
   border-radius: 1.2rem;
   padding: 6.2rem 0;
   margin-top: 6.4rem;
-  /* height: 55rem; */
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 100%;
@@ -70,8 +68,6 @@ export const Content = styled.div`
 
 export const Price = styled.div`
   display: flex;
-  /* justify-content: space-around; */
-  /* flex-direction: row; */
   align-items: center;
 
   .price-tag {
@@ -88,11 +84,9 @@ export const Price = styled.div`
 
   span {
     margin-right: 1rem;
-    /* display: inline-block; */
   }
 `;
 export const Text = styled.div`
-  /* margin-top: 2rem; */
   h3 {
     margin-bottom: 1rem;
   }

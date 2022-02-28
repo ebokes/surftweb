@@ -5,7 +5,7 @@ import group from "../../../images/group-of-people-sitting.png";
 
 const Intro = () => {
   return (
-    <Container pad="17rem 0 10rem 0">
+    <Container pad="17rem 0 10rem 0" padm="12rem 0 6rem 0">
       <IntroContainer>
         <Col1>
           <h4>About us</h4>

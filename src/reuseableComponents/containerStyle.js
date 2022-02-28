@@ -8,6 +8,7 @@ export const Container = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 95%;
+    padding: ${({ padm }) => padm || "5rem 0 5rem 0"};
   }
 `;
 

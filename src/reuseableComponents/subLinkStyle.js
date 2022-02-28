@@ -17,3 +17,15 @@ export const SubLink = styled.a`
     margin-top: 0.5rem;
   }
 `;
+
+export const SocialStyle = styled.div`
+  margin: ${({ margin }) => margin || "2.8rem 0 0 0"};
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Handle = styled.a`
+  color: ${({ color }) => color || "#fff"};
+`;

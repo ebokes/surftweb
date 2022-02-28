@@ -13,6 +13,10 @@ export const Title = styled.div`
   h1 {
     font-size: 4.8rem;
     font-weight: 600;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      font-size: 3.8rem;
+    }
   }
 `;
 export const ProjectGallery = styled.div`

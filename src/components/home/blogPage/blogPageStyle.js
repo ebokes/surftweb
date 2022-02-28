@@ -6,6 +6,11 @@ export const BlogPageContainer = styled.div`
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 6.4rem;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      font-size: 3.8rem;
+      line-height: 1.4rem;
+    }
   }
 `;
 

@@ -29,6 +29,10 @@ export const Col1 = styled.div`
     margin-bottom: 3rem;
     margin-top: 0.8rem;
 
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      font-size: 4rem;
+      line-height: 4.4rem;
+    }
     @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       font-size: 3.2rem;
       line-height: 4.4rem;

@@ -16,7 +16,7 @@ const ProjectPage = () => {
       <ProjectPageContainer>
         <Title>
           <h1>View our projects</h1>
-          <SubLink margin="0" href="/projects">
+          <SubLink margin="0" href="/portfolio">
             View More
             <span>
               <HiOutlineArrowNarrowRight />

@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Col = styled.div`
-  width: 45%;
+  width: 62%;
   text-align: center;
   margin: 0 auto;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 77%;
+  }
 
   h1 {
     font-size: 4.8rem;

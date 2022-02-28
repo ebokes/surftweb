@@ -26,7 +26,7 @@ export const FeaturesPageContainer = styled.div`
       @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
         font-size: 3rem;
         line-height: 4rem;
-        width: 60%;
+        width: 90%;
       }
     }
   }

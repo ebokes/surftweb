@@ -21,6 +21,10 @@ export const Col1 = styled.div`
     font-size: 4.8rem;
     font-weight: 600;
     font-style: normal;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      font-size: 3.8rem;
+    }
   }
 
   p {
