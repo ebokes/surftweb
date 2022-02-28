@@ -50,7 +50,7 @@ const Navbar = () => {
                   <NavLinks to="/pricing">Pricing</NavLinks>
                 </li>
                 <li>
-                  <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contactus">
+                  <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contact-us">
                     Contact Us
                   </CButton>
                 </li>
