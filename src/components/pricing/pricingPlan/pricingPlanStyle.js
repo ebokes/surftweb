@@ -49,6 +49,10 @@ export const Card = styled.div`
   padding: 6.2rem 0;
   margin-top: 6.4rem;
 
+  &:hover {
+    transform: scale(1.05);
+  }
+
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 100%;
   }

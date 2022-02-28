@@ -17,7 +17,7 @@ const PricingPlan = () => {
   return (
     <Container padm="12rem 0 5rem 0">
       <PricingPlanContainer>
-        <Row1 data-aos="zoom-in" data-aos-duration="2000">
+        <Row1 data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
           <h2>Our Pricing Plans</h2>
           <p>
             When you’re ready to go beyond prototyping in Figma, Webflow is
@@ -29,13 +29,18 @@ const PricingPlan = () => {
             <Card
               data-aos="flip-left"
               data-aos-duration="1000"
+              data-aos-once="true"
               key={index}
               style={{
                 backgroundColor: index % 2 === 1 ? "#1C1E53" : "#F4F6FC",
                 color: index % 2 === 1 && "#fff",
               }}
             >
-              <Content data-aos="zoom-in" data-aos-duration="2000">
+              <Content
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-once="true"
+              >
                 <Price>
                   <span className="price-tag">${card.price}</span>
                   <span
