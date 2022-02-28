@@ -30,7 +30,7 @@ export const Row1 = styled.div`
     flex-direction: column;
   }
   h2 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 5.6rem;
   }

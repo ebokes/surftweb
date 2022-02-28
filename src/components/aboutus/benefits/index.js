@@ -19,12 +19,12 @@ const BenefitsSection = () => {
   return (
     <Container>
       <BenefitsSectionContainer>
-        <div className="title">
+        <div data-aos="fade-up" data-aos-duration="2000" className="title">
           <h1>The benefits of working with us</h1>
         </div>
         <Benefits>
           {benefitsData.map((benefits, index) => (
-            <Benefit>
+            <Benefit data-aos="zoom-in" data-aos-duration="2000">
               <Content key={index}>
                 <img src={benefits.icon} alt={benefits.title} />
                 <h4>{benefits.title}</h4>
@@ -33,7 +33,7 @@ const BenefitsSection = () => {
             </Benefit>
           ))}
         </Benefits>
-        <Icons>
+        <Icons data-aos="flip-down" data-aos-duration="500">
           <img src={logo0} alt="logo" />
           <img src={logo1} alt="logo" />
           <img src={logo2} alt="logo" />

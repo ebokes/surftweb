@@ -13,12 +13,17 @@ const OurTeam = () => {
     <BackdropContainer>
       <Container>
         <OurTeamContainer>
-          <Title>
+          <Title data-aos="fade-right" data-aos-duration="2000">
             <h2>Meet our team</h2>
           </Title>
           <Card>
             {cardData.map((item, index) => (
-              <div className="figure" key={index}>
+              <div
+                data-aos="flip-left"
+                data-aos-duration="2000"
+                className="figure"
+                key={index}
+              >
                 <Avatar>
                   <img src={item.img} alt={`avatar-${item.avatar}`} />
                   <Caption>
@@ -29,8 +34,12 @@ const OurTeam = () => {
                     </div>
                   </Caption>
                 </Avatar>
-                <h4>{item.avatar}</h4>
-                <p>{item.position}</p>
+                <h4 data-aos="fade-up" data-aos-duration="2000">
+                  {item.avatar}
+                </h4>
+                <p data-aos="fade-up" data-aos-duration="2000">
+                  {item.position}
+                </p>
               </div>
             ))}
           </Card>

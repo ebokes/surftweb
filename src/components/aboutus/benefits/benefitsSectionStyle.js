@@ -47,6 +47,7 @@ export const Benefit = styled.div`
   width: 31%;
   background-color: ${({ theme }) => theme.colors.tertiary1};
   margin-bottom: 3.2rem;
+  box-shadow: 0 0 10px 3px #0000001f;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 48%;

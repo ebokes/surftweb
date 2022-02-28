@@ -28,7 +28,7 @@ export const Col1 = styled.div`
 
   h1 {
     margin: 1.6rem 0;
-    font-size: 3.8rem;
+    font-size: 3.3rem;
     font-weight: 600;
     line-height: 5.6rem;
 
