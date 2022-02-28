@@ -28,32 +28,19 @@ function ReviewsPage({ item }) {
     <BackdropContainer bg="#F4F6FC80">
       <Container>
         <ReviewsPageContainer>
-          <Col1>
+          <Col1 data-aos="fade-up" data-aos-duration="2000">
             <h1>What our clients say about us</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
           </Col1>
-          <div className="right">
-            <GoChevronLeft
-              color="#28293999"
-              size={36}
-              className="left-arrow"
-              onClick={prevSlide}
-            />
-            <IoIosArrowDroprightCircle
-              color="#5239FA"
-              size={48}
-              className="right-arrow"
-              onClick={nextSlide}
-            />
-          </div>
+
           <Col2>
             {reviewsData.map((item, index) => (
               <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
                 className={index === reviewSlider ? "slide active" : "slide"}
                 key={index}
               >
-                {/* {index === reviewSlider && (
-                  <> */}
                 <h1>"{item.text}"</h1>
                 <div>
                   <div className="left">
@@ -66,10 +53,22 @@ function ReviewsPage({ item }) {
                     </div>
                   </div>
                 </div>
-                {/* </> */}
-                {/* )} */}
               </div>
             ))}
+            <div data-aos="zoom-in" data-aos-duration="2000" className="right">
+              <GoChevronLeft
+                color="#28293999"
+                size={36}
+                className="left-arrow"
+                onClick={prevSlide}
+              />
+              <IoIosArrowDroprightCircle
+                color="#5239FA"
+                size={48}
+                className="right-arrow"
+                onClick={nextSlide}
+              />
+            </div>
           </Col2>
         </ReviewsPageContainer>
       </Container>

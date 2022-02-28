@@ -13,10 +13,10 @@ const LandingPage = () => {
   return (
     <div>
       <BackdropContainer bg="#1C1E53" color="#fff">
-        <Container pad="17rem 0 10rem 0" padm="12rem 0 5rem 0">
+        <Container pad="26rem 0 19rem 0" padm="12rem 0 5rem 0">
           <Row>
             <Left>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="2000">
                 <h1>Building stellar websites for early startups</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -25,7 +25,14 @@ const LandingPage = () => {
                 <span className="grp">
                   <Button href="/portfolio">View our work</Button>
                   <div>
-                    <SubLink color="#fff" mlm="20%" mlt="1rem" href="/pricing">
+                    <SubLink
+                      color="#fff"
+                      mlm="20%"
+                      mlt="1rem"
+                      data-aos="fade-left"
+                      data-aos-duration="2000"
+                      href="/pricing"
+                    >
                       View Pricing
                       <span>
                         <HiOutlineArrowNarrowRight size={30} />
@@ -35,7 +42,7 @@ const LandingPage = () => {
                 </span>
               </div>
             </Left>
-            <Right>
+            <Right data-aos="fade-left" data-aos-duration="2000">
               <img src={illustration} alt="illustration" />
             </Right>
           </Row>

@@ -5,23 +5,6 @@ export const ReviewsPageContainer = styled.div`
   justify-content: space-between;
   position: relative;
 
-  .right {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    bottom: 9px;
-    right: 1px;
-    /* width: 9rem; */
-
-    .right-arrow {
-      cursor: pointer;
-    }
-
-    .left-arrow {
-      cursor: pointer;
-    }
-  }
-
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     flex-direction: column;
   }
@@ -51,6 +34,24 @@ export const Col2 = styled.div`
   display: flex;
   overflow: scroll;
   width: 60%;
+
+  .right {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 9px;
+    right: 1px;
+    width: 9rem;
+
+    .right-arrow {
+      cursor: pointer;
+    }
+
+    .left-arrow {
+      cursor: pointer;
+    }
+  }
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     /* flex-direction: column; */
     width: 100%;

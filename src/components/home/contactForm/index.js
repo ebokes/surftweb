@@ -12,7 +12,7 @@ function ContactForm() {
   return (
     <Container>
       <ContactFormContainer>
-        <Col1>
+        <Col1 data-aos="fade-left" data-aos-duration="2000">
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
@@ -22,7 +22,7 @@ function ContactForm() {
             </p>
           </div>
         </Col1>
-        <Col2>
+        <Col2 data-aos="fade-right" data-aos-duration="2000">
           <div>
             <h5>Send inquiry</h5>
             <p>
@@ -44,9 +44,11 @@ function ContactForm() {
                 placeholder="Paste you figma design URL"
               />
               <span></span>
-              <Button padding="1.6rem 0">Send an Inquiry</Button>
+              <Button href="/#" padding="1.6rem 0">
+                Send an Inquiry
+              </Button>
             </form>
-            <SubLink color="#fff" mld="29%">
+            <SubLink href="/contact-us" color="#fff" mld="29%">
               Get in touch with us
               <span>
                 <HiOutlineArrowNarrowRight />

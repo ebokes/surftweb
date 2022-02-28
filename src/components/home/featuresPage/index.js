@@ -17,13 +17,13 @@ const FeaturesPage = () => {
     <BackdropContainer>
       <Container>
         <FeaturesPageContainer>
-          <div className="title">
+          <div data-aos="fade-up" data-aos-duration="2000" className="title">
             <p>Features</p>
             <h1>Design that solves problems, one product at a time</h1>
           </div>
           <Features>
             {featuresData.map((feature, index) => (
-              <Feature>
+              <Feature data-aos="zoom-out" data-aos-duration="2000">
                 <Content key={index}>
                   <img src={feature.icon} alt={feature.title} />
                   <h4>{feature.title}</h4>

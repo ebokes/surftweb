@@ -15,8 +15,15 @@ const ProjectPage = () => {
     <Container>
       <ProjectPageContainer>
         <Title>
-          <h1>View our projects</h1>
-          <SubLink margin="0" href="/portfolio">
+          <h1 data-aos="fade-up" data-aos-duration="2000">
+            View our projects
+          </h1>
+          <SubLink
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            margin="0"
+            href="/portfolio"
+          >
             View More
             <span>
               <HiOutlineArrowNarrowRight />
@@ -24,8 +31,8 @@ const ProjectPage = () => {
           </SubLink>
         </Title>
         <ProjectGallery>
-          <Col1></Col1>
-          <Col2>
+          <Col1 data-aos="fade-right" data-aos-duration="2000"></Col1>
+          <Col2 data-aos="fade-left" data-aos-duration="2000">
             <div>
               <section>
                 <h4>Unisaas Website Design</h4>
@@ -37,7 +44,7 @@ const ProjectPage = () => {
                 </SubLink>
               </section>
             </div>
-            <aside></aside>
+            <aside data-aos="fade-up" data-aos-duration="1000"></aside>
             {/* <img src={project3} alt="project snapshot3" /> */}
           </Col2>
         </ProjectGallery>

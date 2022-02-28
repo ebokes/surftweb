@@ -7,7 +7,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 function BlogPage() {
   const article = blogData.map((article) => (
-    <Article key={article.id}>
+    <Article data-aos="fade-up" data-aos-duration="2000" key={article.id}>
       <img src={article.img} alt="blog pic" />
       <p>{article.date}</p>
       <h4>{article.title}</h4>
@@ -24,7 +24,9 @@ function BlogPage() {
   return (
     <Container pad="0 0 10rem 0">
       <BlogPageContainer>
-        <h1>Our blog</h1>
+        <h1 data-aos="fade-up" data-aos-duration="2000">
+          Our blog
+        </h1>
         <Articles>{article}</Articles>
       </BlogPageContainer>
     </Container>

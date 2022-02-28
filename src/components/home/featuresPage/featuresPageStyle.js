@@ -43,6 +43,7 @@ export const Feature = styled.div`
   width: 31%;
   background-color: ${({ theme }) => theme.colors.tertiary2};
   margin-bottom: 3.2rem;
+  box-shadow: 1px 1px 10px 1px #0000001f;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 48%;

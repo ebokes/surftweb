@@ -1,4 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
@@ -35,6 +37,9 @@ const theme = {
 };
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Router>
       <ThemeProvider theme={theme}>
