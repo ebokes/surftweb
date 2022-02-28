@@ -20,6 +20,10 @@ export const Col1 = styled.div`
     font-size: 3.8rem;
     font-weight: 600;
   }
+
+  & > a {
+    color: ${({ theme }) => theme.colors.primary3};
+  }
 `;
 export const Col2 = styled.div`
   width: 65%;

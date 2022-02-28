@@ -19,7 +19,7 @@ function FaqPage() {
       <FaqPageContainer>
         <Col1 data-aos="fade-right" data-aos-duration="2000">
           <h1>Frequently asked questions</h1>
-          <a href="/contact">Contact us for more info</a>
+          <a href="/contact-us">Contact us for more info</a>
         </Col1>
         <Col2>
           {faqData.map((item, index) => (
