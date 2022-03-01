@@ -14,7 +14,7 @@ function WorkPage() {
     <BackdropContainer>
       <Container>
         <WorkPageContainer>
-          <Col1 data-aos="fade-up" data-aos-duration="2000">
+          <Col1 data-aos="fade-up">
             <h1>How we work</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,11 +30,7 @@ function WorkPage() {
           <Col2>
             {workData.map((item) => (
               <List>
-                <div
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                  className="vector"
-                >
+                <div data-aos="fade-left" className="vector">
                   <div className="block3">
                     <div className="block2">
                       <div className="block1">
@@ -43,11 +39,7 @@ function WorkPage() {
                     </div>
                   </div>
                 </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  className="writeup"
-                >
+                <div data-aos="fade-up" className="writeup">
                   <h5>{item.heading}</h5>
                   <p>{item.text}</p>
                 </div>

@@ -14,7 +14,6 @@ const Goals = () => {
           {goalsData.map((item, index) => (
             <GoalsDataContainer
               data-aos="fade-up"
-              data-aos-duration="2000"
               key={index}
               fld={index % 2 !== 0 && "row-reverse"}
             >
@@ -23,7 +22,7 @@ const Goals = () => {
                 <h1>{item.title}</h1>
                 <p>{item.text}</p>
               </Col1>
-              <Col2 data-aos="zoom-in" data-aos-duration="2000">
+              <Col2 data-aos="zoom-in">
                 <img src={item.img} alt="img" />
               </Col2>
             </GoalsDataContainer>

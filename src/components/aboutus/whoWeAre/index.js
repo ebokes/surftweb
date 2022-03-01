@@ -11,7 +11,7 @@ const WhoWeAre = () => {
             Who we are
           </h4>
           <Row1>
-            <Col1 data-aos="fade-right" data-aos-duration="2000">
+            <Col1 data-aos="fade-right">
               <h2>Goal focused</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -20,11 +20,7 @@ const WhoWeAre = () => {
                 nisi ut aliquip ex ea commodo consequat.
               </p>
             </Col1>
-            <Col2
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              data-aos-once="true"
-            >
+            <Col2 data-aos="fade-left" data-aos-once="true">
               <h2>Continuous improvement</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,11 +31,7 @@ const WhoWeAre = () => {
             </Col2>
           </Row1>
         </div>
-        <Row2
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-once="true"
-        />
+        <Row2 data-aos="zoom-in" data-aos-once="true" />
       </WhoWeAreContainer>
     </Container>
   );

@@ -12,7 +12,7 @@ function ContactForm() {
   return (
     <Container>
       <ContactFormContainer>
-        <Col1 data-aos="fade-left" data-aos-duration="2000">
+        <Col1 data-aos="fade-left">
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
@@ -22,7 +22,7 @@ function ContactForm() {
             </p>
           </div>
         </Col1>
-        <Col2 data-aos="fade-right" data-aos-duration="2000">
+        <Col2 data-aos="fade-right">
           <div>
             <h5>Send inquiry</h5>
             <p>

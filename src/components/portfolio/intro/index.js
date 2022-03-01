@@ -13,7 +13,7 @@ const Intro = () => {
     <BackdropContainer>
       <Container pad="30rem 0 24rem 0" padm="12rem 0 6rem 0">
         <IntroContainer>
-          <Col1 data-aos="fade-up" data-aos-duration="2000">
+          <Col1 data-aos="fade-up">
             <h4>What we created</h4>
             <h1>Our Work Portfolio</h1>
             <p>
@@ -21,11 +21,7 @@ const Intro = () => {
               tools and technology to make the design-to-code process
               universally accessible.
             </p>
-            <SocialStyle
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              margin="0 auto"
-            >
+            <SocialStyle data-aos="zoom-in" margin="0 auto">
               <Handle color="#000" href="https://facebook.com" target="_blank">
                 <MdFacebook size={25} />
               </Handle>
