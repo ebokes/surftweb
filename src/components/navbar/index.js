@@ -12,7 +12,6 @@ import {
 } from "./navbarStyle";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
-// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(true);

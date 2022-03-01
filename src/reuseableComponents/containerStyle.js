@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   padding: ${({ pad }) => pad || "10rem 0 10rem 0"};
+  overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 95%;

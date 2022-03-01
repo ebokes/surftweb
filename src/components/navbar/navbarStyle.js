@@ -66,7 +66,7 @@ export const NavbarContent = styled.div`
 
         @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
           margin-bottom: 2rem;
-          /* border-bottom: 0.2rem solid; */
+          border-bottom: 0.2rem solid;
           padding-bottom: 1rem;
           padding-right: 10rem;
           position: relative;
@@ -74,6 +74,11 @@ export const NavbarContent = styled.div`
       }
     }
   }
+`;
+
+export const Logo = styled(LinkR)`
+  width: 10%;
+  color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
 export const NavLinks = styled(LinkR)`
@@ -109,11 +114,6 @@ export const MenuButton = styled.div`
     display: block;
     cursor: pointer;
   }
-`;
-
-export const Logo = styled(LinkR)`
-  width: 10%;
-  color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
 export const CButton = styled.a`
