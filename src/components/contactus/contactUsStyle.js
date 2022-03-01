@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const ContactUsContainer = styled.div``;
+export const ContactUsContainer = styled.div`
+  margin: 0 auto;
+`;
 export const Row1 = styled.div`
   /* text-align: center; */
   width: 80%;
@@ -30,7 +32,7 @@ export const Row2 = styled.div`
   border-radius: 1.2rem;
 `;
 
-export const InputField = styled.form`
+export const FormField = styled.form`
   padding: 4.5rem 0 3rem 0;
   margin: 0 auto;
   width: 85%;
@@ -38,18 +40,20 @@ export const InputField = styled.form`
   flex-wrap: wrap;
 `;
 
-export const Input = styled.div`
+export const InputField = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
   width: 50%;
   margin-top: 2rem;
+  color: red;
 
-  label {
+  & > label {
     font-size: 1.8rem;
     margin-bottom: 0.6rem;
     width: fit-content;
+    color: #000;
   }
   input {
     width: 90%;
@@ -70,11 +74,13 @@ export const Textarea = styled.div`
   display: flex;
   flex-direction: column;
   width: 95%;
+  color: red;
 
-  label {
+  & > label {
     font-size: 1.8rem;
     margin: 1.6rem 0 0.6rem 0;
     width: fit-content;
+    color: #000;
   }
 
   textarea {
@@ -92,20 +98,16 @@ export const Textarea = styled.div`
   }
 `;
 
-export const SubmitBtn = styled.input`
-  
-    color: ${({ theme }) => theme.colors.tertiary2};
-    background-color: ${({ theme }) => theme.colors.primary1};
-    /* padding: "1.6rem 6.4rem"; */
-    display: inline-block;
-    border-radius: 4.1rem;
-    font-weight: 600;
-    /* line-height: 3.2rem; */
-    font-size: 1.8rem;
-    text-align: center;
-    width: 25rem;
-    height: 7rem;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
+export const SubmitBtn = styled.button`
+  color: ${({ theme }) => theme.colors.tertiary2};
+  background-color: ${({ theme }) => theme.colors.primary1};
+  display: inline-block;
+  border-radius: 4.1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 25rem;
+  height: 7rem;
+  cursor: pointer;
+  margin-top: 2rem;
 `;
