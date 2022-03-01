@@ -1,8 +1,18 @@
-import { Fragment } from "react";
-import { GlobalStyle } from "./styles/GlobalStyles";
+import { Fragment, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
-import LandingPage from "./components/LandingPage";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/index";
+import FooterPage from "./components/footer/index";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
+import ContactUs from "./components/contactus/index";
+
+// import Slider from "./components/Slider";
 
 const theme = {
   colors: {
@@ -17,6 +27,7 @@ const theme = {
     tertiary3: "#000",
     tertiary4: "#1B1C2B",
     tertiary5: "rgba(255, 255, 255, 0.7)",
+    tertiary6: "#F4F6FC33",
   },
 
   mediaQuery: {
@@ -26,14 +37,26 @@ const theme = {
 };
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <ThemeProvider theme={theme}>
-      <Fragment>
-        <GlobalStyle />
-        <Navbar />
-        <LandingPage />
-      </Fragment>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <Fragment>
+          <GlobalStyle />
+          <Navbar />
+          <Routes>
+            <Route path="/*" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+          </Routes>
+          <FooterPage />
+        </Fragment>
+      </ThemeProvider>
+    </Router>
   );
 }
 
