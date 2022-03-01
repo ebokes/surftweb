@@ -38,7 +38,7 @@ const theme = {
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({ duration: 1500 });
   }, []);
   return (
     <Router>

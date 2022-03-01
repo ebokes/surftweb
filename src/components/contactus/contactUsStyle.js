@@ -4,7 +4,6 @@ export const ContactUsContainer = styled.div`
   margin: 0 auto;
 `;
 export const Row1 = styled.div`
-  /* text-align: center; */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -15,6 +14,10 @@ export const Row1 = styled.div`
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 6.4rem;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      font-size: 3rem;
+    }
   }
   p {
     opacity: 0.7;
@@ -30,6 +33,10 @@ export const Row2 = styled.div`
   margin: 0 auto;
   margin-top: 6.4rem;
   border-radius: 1.2rem;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const FormField = styled.form`
@@ -38,16 +45,25 @@ export const FormField = styled.form`
   width: 85%;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    flex-direction: column;
+  }
 `;
 
 export const InputField = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   width: 50%;
   margin-top: 2rem;
   color: red;
+  height: 12rem;
+  justify-content: flex-start;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 100%;
+  }
 
   & > label {
     font-size: 1.8rem;
@@ -55,6 +71,7 @@ export const InputField = styled.div`
     width: fit-content;
     color: #000;
   }
+
   input {
     width: 90%;
     padding: 1.8rem 3.2rem;
@@ -63,6 +80,10 @@ export const InputField = styled.div`
     background-color: ${({ theme }) => theme.colors.tertiary1};
     outline: none;
     font-size: 1.8rem;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      width: 100%;
+    }
 
     &:focus {
       border-bottom: 2px solid black;
@@ -81,6 +102,10 @@ export const Textarea = styled.div`
     margin: 1.6rem 0 0.6rem 0;
     width: fit-content;
     color: #000;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 100%;
   }
 
   textarea {
@@ -110,4 +135,9 @@ export const SubmitBtn = styled.button`
   height: 7rem;
   cursor: pointer;
   margin-top: 2rem;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 18rem;
+    height: 5rem;
+  }
 `;
