@@ -12,8 +12,10 @@ import {
 } from "./navbarStyle";
 import { Sling as Hamburger } from "hamburger-react";
 
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const handleClose = () => setToggle(false);
 
   return (
     <div>
@@ -26,26 +28,45 @@ const Navbar = () => {
       >
         <Container pad="0 0 0 0" padm="0 0 0 0">
           <NavbarContainer>
-            <Logo to="/">
+            <Logo onClick={handleClose} to="/">
               <h2>Surftweb</h2>
             </Logo>
             <ul className={toggle ? "mobile-menu" : "desktop-menu"}>
               <li>
-                <NavLink className="active" to="/">
+                <NavLink
+                  onClick={handleClose}
+                  className=
+                  // {handleActive ? 
+                    "activated" 
+                    // :
+                    //  "deactivated"
+                    // }
+                  to="/"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us">About Us</NavLink>
+                <NavLink onClick={handleClose} to="/about-us">
+                  About Us
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/portfolio">Portfolio</NavLink>
+                <NavLink onClick={handleClose} to="/portfolio">
+                  Portfolio
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/pricing">Pricing</NavLink>
+                <NavLink onClick={handleClose} to="/pricing">
+                  Pricing
+                </NavLink>
               </li>
               <li>
-                <CButton bgh="rgba(255, 255, 255, 0.1)" to="/contact-us">
+                <CButton
+                  bgh="rgba(255, 255, 255, 0.1)"
+                  onClick={handleClose}
+                  to="/contact-us"
+                >
                   Contact Us
                 </CButton>
               </li>

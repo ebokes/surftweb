@@ -46,7 +46,7 @@ export const NavbarContainer = styled.div`
   }
 `;
 
-export const Logo = styled.a`
+export const Logo = styled(LinkR)`
   color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
@@ -55,9 +55,24 @@ export const NavLink = styled(LinkR)`
   color: ${({ theme }) => theme.colors.tertiary5};
   position: relative;
 
-  .active,
+  .activated {
+    color: ${({ theme }) => theme.colors.tertiary2};
+  }
+  .activated::before {
+    content: "";
+    width: 10rem;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    /* color: white;
+    border-bottom: 2px solid white; */
+  }
+
   :hover {
     color: ${({ theme }) => theme.colors.tertiary2};
+
     &:not(:last-child) {
       padding-bottom: 0.3rem;
       border-bottom: 0.2rem solid #fff;
@@ -65,7 +80,7 @@ export const NavLink = styled(LinkR)`
   }
 `;
 
-export const CButton = styled.a`
+export const CButton = styled(LinkR)`
   background-color: ${({ theme }) => theme.colors.primary2};
   color: ${({ theme }) => theme.colors.tertiary2};
   border: 2px solid ${({ theme }) => theme.colors.tertiary6};
@@ -74,7 +89,7 @@ export const CButton = styled.a`
   font-weight: 600;
   line-height: 3.2rem;
 
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     border: none;
     font-weight: 400;
     padding: 0;
