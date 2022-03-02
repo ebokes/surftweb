@@ -11,7 +11,6 @@ export const NavbarContainer = styled.div`
   width: 100%;
   max-width: 120rem;
 
-  /* Desktop Menu */
   .desktop-menu {
     display: flex;
     justify-content: flex-end;
@@ -21,8 +20,54 @@ export const NavbarContainer = styled.div`
     @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
     }
+
+    & > li {
+      .navLink {
+        margin-right: 3rem;
+        color: ${({ theme }) => theme.colors.tertiary5};
+        position: relative;
+
+        ::before {
+          content: "";
+          width: 0rem;
+          height: 2px;
+          background-color: ${({ theme }) => theme.colors.tertiary2};
+          position: absolute;
+          left: 1px;
+          bottom: -4px;
+          transition: all 0.5s;
+        }
+
+        :hover {
+          color: ${({ theme }) => theme.colors.tertiary2};
+
+          &::before {
+            content: "";
+            width: 5rem;
+            height: 2px;
+            background-color: ${({ theme }) => theme.colors.tertiary2};
+            position: absolute;
+            left: 1px;
+            bottom: -4px;
+          }
+        }
+      }
+      .active {
+        color: ${({ theme }) => theme.colors.tertiary2};
+
+        &::before {
+          content: "";
+          width: 5rem;
+          height: 2px;
+          background-color: ${({ theme }) => theme.colors.tertiary2};
+          position: absolute;
+          left: 1px;
+          bottom: -4px;
+        }
+      }
+    }
   }
-  /* Mobile Menu */
+
   .mobile-menu {
     background-color: #1c1e53e8;
     position: absolute;
@@ -48,36 +93,6 @@ export const NavbarContainer = styled.div`
 
 export const Logo = styled(LinkR)`
   color: ${({ theme }) => theme.colors.tertiary2};
-`;
-
-export const NavLink = styled(LinkR)`
-  margin-right: 3rem;
-  color: ${({ theme }) => theme.colors.tertiary5};
-  position: relative;
-
-  .activated {
-    color: ${({ theme }) => theme.colors.tertiary2};
-  }
-  .activated::before {
-    content: "";
-    width: 10rem;
-    height: 1rem;
-    background-color: #fff;
-    position: absolute;
-    left: 1px;
-    bottom: 1px;
-    /* color: white;
-    border-bottom: 2px solid white; */
-  }
-
-  :hover {
-    color: ${({ theme }) => theme.colors.tertiary2};
-
-    &:not(:last-child) {
-      padding-bottom: 0.3rem;
-      border-bottom: 0.2rem solid #fff;
-    }
-  }
 `;
 
 export const CButton = styled(LinkR)`

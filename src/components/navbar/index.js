@@ -3,15 +3,9 @@ import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import {
-  NavbarContainer,
-  Logo,
-  CButton,
-  NavLink,
-  MenuButton,
-} from "./navbarStyle";
+import { NavbarContainer, Logo, CButton, MenuButton } from "./navbarStyle";
 import { Sling as Hamburger } from "hamburger-react";
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,30 +28,42 @@ const Navbar = () => {
             <ul className={toggle ? "mobile-menu" : "desktop-menu"}>
               <li>
                 <NavLink
+                  exact
+                  className="navLink"
+                  activeClassName="active"
                   onClick={handleClose}
-                  className=
-                  // {handleActive ? 
-                    "activated" 
-                    // :
-                    //  "deactivated"
-                    // }
                   to="/"
                 >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={handleClose} to="/about-us">
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/about-us"
+                >
                   About Us
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={handleClose} to="/portfolio">
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/portfolio"
+                >
                   Portfolio
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={handleClose} to="/pricing">
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/pricing"
+                >
                   Pricing
                 </NavLink>
               </li>
