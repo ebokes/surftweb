@@ -1,117 +1,66 @@
 import styled from "styled-components";
 
-export const NavbarContent = styled.div`
+export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 0 1.6rem 0;
-  position: fixed;
   height: 7.8rem;
-  background-color: ${({ theme }) => theme.colors.primary2};
+  margin: 0 auto;
   width: 100%;
   max-width: 120rem;
-  margin: 0 auto;
-  position: relative;
 
-  /* border: 2px solid yellow; */
-
-  nav {
+  /* Desktop Menu */
+  .desktop-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
 
-    .mobile {
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
-
-      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        flex-direction: column;
-        background-color: green;
-        position: absolute;
-        right: -100%;
-        top: 7.8rem;
-        width: 25rem;
-        padding-left: 1rem;
-        align-items: flex-start;
-        height: 100rem;
-        /* background-color: ${({ theme }) => theme.colors.primary2}; */
-      }
     }
+  }
+  /* Mobile Menu */
+  .mobile-menu {
+    background-color: #1c1e53e8;
+    position: absolute;
+    right: -7rem;
+    top: 7.8rem;
+    width: 25rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    height: 100vh;
 
-    .desktop {
-      display: flex;
-      align-items: center;
+    & > li {
+      margin-bottom: 1rem;
+      border-bottom: 0.1rem solid;
+      padding-bottom: 1rem;
+      padding-right: 10rem;
 
-      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        display: none;
-        /* flex-direction: column;
-        background-color: ${({ theme }) => theme.colors.primary2};
-        position: absolute;
-        right: -7rem;
-        top: 7.8rem;
-        width: 25rem;
-        padding-left: 1rem;
-        align-items: flex-start;
-        height: 100rem; */
-      }
-
-      li {
-        &:not(:last-child) {
-          margin-right: 4rem;
-
-          @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-            margin-right: 1.5rem;
-          }
-        }
-
-        @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-          margin-bottom: 2rem;
-          border-bottom: 0.2rem solid;
-          padding-bottom: 1rem;
-          padding-right: 10rem;
-          position: relative;
-        }
+      a {
+        color: ${({ theme }) => theme.colors.tertiary2};
       }
     }
   }
 `;
 
 export const Logo = styled.a`
-  width: 10%;
   color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
-export const NavLinks = styled.a`
+export const NavLink = styled.a`
+  margin-right: 3rem;
   color: ${({ theme }) => theme.colors.tertiary5};
-  transition: all 0.1s;
+  position: relative;
 
   .active,
   :hover {
     color: ${({ theme }) => theme.colors.tertiary2};
     &:not(:last-child) {
       padding-bottom: 0.3rem;
-      border-bottom: 0.2rem solid;
+      border-bottom: 0.2rem solid #fff;
     }
-    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      border-bottom: none;
-    }
-  }
-  /* &::before {
-    content: "";
-    width: 20rem;
-    height: 0.2rem;
-    bottom: 0.1rem;
-    left: 0.1rem;
-    background-color: ${({ theme }) => theme.colors.tertiary2};
-    position: absolute;
-  } */
-`;
-
-export const MenuButton = styled.div`
-  display: none;
-
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    display: block;
-    cursor: pointer;
   }
 `;
 
@@ -129,9 +78,18 @@ export const CButton = styled.a`
     font-weight: 400;
     padding: 0;
     color: ${({ theme }) => theme.colors.tertiary5};
+    background-color: transparent;
+    line-height: 1.2rem;
   }
+`;
 
-  &:hover {
-    color: ${({ theme }) => theme.colors.tertiary2};
+export const MenuButton = styled.div`
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
   }
 `;
