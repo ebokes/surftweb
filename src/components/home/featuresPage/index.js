@@ -15,7 +15,7 @@ import featuresData from "../../../data/featuresPageData";
 const FeaturesPage = () => {
   return (
     <BackdropContainer>
-      <Container>
+      <Container pad="10rem 1rem 10rem 1rem">
         <FeaturesPageContainer>
           <div data-aos="fade-up" className="title">
             <p>Features</p>

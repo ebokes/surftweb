@@ -17,7 +17,7 @@ import benefitsData from "../../../data/benefitsSectionData";
 
 const BenefitsSection = () => {
   return (
-    <Container>
+    <Container pad="10rem 1rem 10rem 1rem">
       <BenefitsSectionContainer>
         <div data-aos="fade-up" className="title">
           <h1>The benefits of working with us</h1>

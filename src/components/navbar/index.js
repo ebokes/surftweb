@@ -33,20 +33,23 @@ const Navbar = () => {
               <h2>Surftweb</h2>
             </Logo>
             <nav>
-              <ul onClick={handleClick} className={toggleMenu ? "up" : "down"}>
+              <ul
+                onClick={handleClick}
+                className={toggleMenu ? "desktop" : "mobile"}
+              >
                 <li>
-                  <NavLinks className="active" to="/">
+                  <NavLinks className="active" href="/">
                     Home
                   </NavLinks>
                 </li>
                 <li>
-                  <NavLinks to="/about-us">About Us</NavLinks>
+                  <NavLinks href="/about-us">About Us</NavLinks>
                 </li>
                 <li>
-                  <NavLinks to="/portfolio">Portfolio</NavLinks>
+                  <NavLinks href="/portfolio">Portfolio</NavLinks>
                 </li>
                 <li>
-                  <NavLinks to="/pricing">Pricing</NavLinks>
+                  <NavLinks href="/pricing">Pricing</NavLinks>
                 </li>
                 <li>
                   <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contact-us">

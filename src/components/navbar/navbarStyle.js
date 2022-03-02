@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 
 export const NavbarContent = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ export const NavbarContent = styled.div`
     justify-content: space-evenly;
     align-items: center;
 
-    .down {
+    .mobile {
       display: none;
 
       @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
@@ -38,7 +37,7 @@ export const NavbarContent = styled.div`
       }
     }
 
-    .up {
+    .desktop {
       display: flex;
       align-items: center;
 
@@ -76,12 +75,12 @@ export const NavbarContent = styled.div`
   }
 `;
 
-export const Logo = styled(LinkR)`
+export const Logo = styled.a`
   width: 10%;
   color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled.a`
   color: ${({ theme }) => theme.colors.tertiary5};
   transition: all 0.1s;
 
