@@ -126,8 +126,8 @@ const Contact = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.message}
               ></textarea>
-              {formik.touched.subject && formik.errors.subject ? (
-                <p>{formik.errors.subject}</p>
+              {formik.touched.message && formik.errors.message ? (
+                <p>{formik.errors.message}</p>
               ) : null}
             </Textarea>
             <SubmitBtn type="submit">Send Message</SubmitBtn>
