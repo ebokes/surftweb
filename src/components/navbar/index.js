@@ -26,26 +26,26 @@ const Navbar = () => {
       >
         <Container pad="0 0 0 0" padm="0 0 0 0">
           <NavbarContainer>
-            <Logo href="/">
+            <Logo to="/">
               <h2>Surftweb</h2>
             </Logo>
             <ul className={toggle ? "mobile-menu" : "desktop-menu"}>
               <li>
-                <NavLink className="active" href="/">
+                <NavLink className="active" to="/">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/about-us">About Us</NavLink>
+                <NavLink to="/about-us">About Us</NavLink>
               </li>
               <li>
-                <NavLink href="/portfolio">Portfolio</NavLink>
+                <NavLink to="/portfolio">Portfolio</NavLink>
               </li>
               <li>
-                <NavLink href="/pricing">Pricing</NavLink>
+                <NavLink to="/pricing">Pricing</NavLink>
               </li>
               <li>
-                <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contact-us">
+                <CButton bgh="rgba(255, 255, 255, 0.1)" to="/contact-us">
                   Contact Us
                 </CButton>
               </li>

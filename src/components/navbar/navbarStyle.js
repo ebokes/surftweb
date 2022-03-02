@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ export const Logo = styled.a`
   color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(LinkR)`
   margin-right: 3rem;
   color: ${({ theme }) => theme.colors.tertiary5};
   position: relative;
