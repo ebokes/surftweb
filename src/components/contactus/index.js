@@ -16,7 +16,7 @@ const Contact = () => {
   const formik = useFormik({
     initialValues: {
       name: "",
-      context: "",
+      phone: "",
       email: "",
       subject: "",
       message: "",
@@ -29,7 +29,7 @@ const Contact = () => {
         .email("Invalid Email")
         // .max(15, "Must be 15 characters or less")
         .required("*Required"),
-      context: Yup.string()
+      phone: Yup.string()
         .max(15, "Must be 15 characters or less")
         .required("*Required"),
       subject: Yup.string()
@@ -45,14 +45,14 @@ const Contact = () => {
   return (
     <Container pad="17rem 0 10rem 0" padm="12rem 0 6rem 0">
       <ContactUsContainer>
-        <Row1>
+        <Row1 data-aos="fade-up" data-aos-once="true">
           <h1>Contact Us</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </p>
         </Row1>
-        <Row2>
+        <Row2 data-aos="fade-up" data-aos-once="true">
           <FormField onSubmit={formik.handleSubmit}>
             <InputField>
               <label htmlFor="name">Name</label>
@@ -85,24 +85,24 @@ const Contact = () => {
               ) : null}
             </InputField>
             <InputField>
-              <label htmlFor="context">Context</label>
+              <label htmlFor="phone">Phone</label>
               <input
                 type="text"
-                name="context"
-                id="context"
-                placeholder="Provide context"
+                name="phone"
+                id="phone"
+                placeholder="Enter phone number"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                value={formik.values.context}
+                value={formik.values.phone}
               />
-              {formik.touched.context && formik.errors.context ? (
-                <p>{formik.errors.context}</p>
+              {formik.touched.phone && formik.errors.phone ? (
+                <p>{formik.errors.phone}</p>
               ) : null}
             </InputField>
             <InputField>
               <label htmlFor="subject">Subject</label>
               <input
-                type="text"
+                type="tel"
                 name="subject"
                 id="subject"
                 placeholder="Select subject"
@@ -126,8 +126,8 @@ const Contact = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.message}
               ></textarea>
-              {formik.touched.subject && formik.errors.subject ? (
-                <p>{formik.errors.subject}</p>
+              {formik.touched.message && formik.errors.message ? (
+                <p>{formik.errors.message}</p>
               ) : null}
             </Textarea>
             <SubmitBtn type="submit">Send Message</SubmitBtn>

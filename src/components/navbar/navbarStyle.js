@@ -1,122 +1,101 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
-export const NavbarContent = styled.div`
+export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 0 1.6rem 0;
-  position: fixed;
   height: 7.8rem;
-  background-color: ${({ theme }) => theme.colors.primary2};
+  margin: 0 auto;
   width: 100%;
   max-width: 120rem;
-  margin: 0 auto;
-  position: relative;
 
-  /* border: 2px solid yellow; */
-
-  nav {
+  .desktop-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
 
-    .down {
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
-
-      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        flex-direction: column;
-        background-color: green;
-        position: absolute;
-        right: -100%;
-        top: 7.8rem;
-        width: 25rem;
-        padding-left: 1rem;
-        align-items: flex-start;
-        height: 100rem;
-        /* background-color: ${({ theme }) => theme.colors.primary2}; */
-      }
     }
 
-    .up {
-      display: flex;
-      align-items: center;
+    & > li {
+      .navLink {
+        margin-right: 3rem;
+        color: ${({ theme }) => theme.colors.tertiary5};
+        position: relative;
 
-      @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-        display: none;
-        /* flex-direction: column;
-        background-color: ${({ theme }) => theme.colors.primary2};
-        position: absolute;
-        right: -7rem;
-        top: 7.8rem;
-        width: 25rem;
-        padding-left: 1rem;
-        align-items: flex-start;
-        height: 100rem; */
-      }
+        ::before {
+          content: "";
+          width: 0rem;
+          height: 2px;
+          background-color: ${({ theme }) => theme.colors.tertiary2};
+          position: absolute;
+          left: 1px;
+          bottom: -4px;
+          transition: all 0.5s;
+        }
 
-      li {
-        &:not(:last-child) {
-          margin-right: 4rem;
+        :hover {
+          color: ${({ theme }) => theme.colors.tertiary2};
 
-          @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-            margin-right: 1.5rem;
+          &::before {
+            content: "";
+            width: 5rem;
+            height: 2px;
+            background-color: ${({ theme }) => theme.colors.tertiary2};
+            position: absolute;
+            left: 1px;
+            bottom: -4px;
           }
         }
+      }
+      .active {
+        color: ${({ theme }) => theme.colors.tertiary2};
 
-        @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-          margin-bottom: 2rem;
-          border-bottom: 0.2rem solid;
-          padding-bottom: 1rem;
-          padding-right: 10rem;
-          position: relative;
+        &::before {
+          content: "";
+          width: 5rem;
+          height: 2px;
+          background-color: ${({ theme }) => theme.colors.tertiary2};
+          position: absolute;
+          left: 1px;
+          bottom: -4px;
         }
+      }
+    }
+  }
+
+  .mobile-menu {
+    background-color: #1c1e53e8;
+    position: absolute;
+    right: -7rem;
+    top: 7.8rem;
+    width: 25rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    height: 100vh;
+
+    & > li {
+      margin-bottom: 1rem;
+      border-bottom: 0.1rem solid;
+      padding-bottom: 1rem;
+      padding-right: 10rem;
+
+      a {
+        color: ${({ theme }) => theme.colors.tertiary2};
       }
     }
   }
 `;
 
 export const Logo = styled(LinkR)`
-  width: 10%;
   color: ${({ theme }) => theme.colors.tertiary2};
 `;
 
-export const NavLinks = styled(LinkR)`
-  color: ${({ theme }) => theme.colors.tertiary5};
-  transition: all 0.1s;
-
-  .active,
-  :hover {
-    color: ${({ theme }) => theme.colors.tertiary2};
-    &:not(:last-child) {
-      padding-bottom: 0.3rem;
-      border-bottom: 0.2rem solid;
-    }
-    @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      border-bottom: none;
-    }
-  }
-  /* &::before {
-    content: "";
-    width: 20rem;
-    height: 0.2rem;
-    bottom: 0.1rem;
-    left: 0.1rem;
-    background-color: ${({ theme }) => theme.colors.tertiary2};
-    position: absolute;
-  } */
-`;
-
-export const MenuButton = styled.div`
-  display: none;
-
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    display: block;
-    cursor: pointer;
-  }
-`;
-
-export const CButton = styled.a`
+export const CButton = styled(LinkR)`
   background-color: ${({ theme }) => theme.colors.primary2};
   color: ${({ theme }) => theme.colors.tertiary2};
   border: 2px solid ${({ theme }) => theme.colors.tertiary6};
@@ -125,14 +104,23 @@ export const CButton = styled.a`
   font-weight: 600;
   line-height: 3.2rem;
 
-  @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     border: none;
     font-weight: 400;
     padding: 0;
     color: ${({ theme }) => theme.colors.tertiary5};
+    background-color: transparent;
+    line-height: 1.2rem;
   }
+`;
 
-  &:hover {
-    color: ${({ theme }) => theme.colors.tertiary2};
+export const MenuButton = styled.div`
+  display: none;
+
+  @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
   }
 `;

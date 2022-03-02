@@ -16,7 +16,7 @@ const LandingPage = () => {
         <Container pad="26rem 0 19rem 0" padm="12rem 0 5rem 0">
           <Row>
             <Left>
-              <div data-aos="fade-up" data-aos-duration="2000">
+              <div data-aos="fade-up">
                 <h1>Building stellar websites for early startups</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -30,7 +30,6 @@ const LandingPage = () => {
                       mlm="20%"
                       mlt="1rem"
                       data-aos="fade-left"
-                      data-aos-duration="2000"
                       href="/pricing"
                     >
                       View Pricing
@@ -42,7 +41,7 @@ const LandingPage = () => {
                 </span>
               </div>
             </Left>
-            <Right data-aos="fade-left" data-aos-duration="2000">
+            <Right data-aos="fade-left">
               <img src={illustration} alt="illustration" />
             </Right>
           </Row>

@@ -15,15 +15,15 @@ import featuresData from "../../../data/featuresPageData";
 const FeaturesPage = () => {
   return (
     <BackdropContainer>
-      <Container>
+      <Container pad="10rem 1rem 10rem 1rem">
         <FeaturesPageContainer>
-          <div data-aos="fade-up" data-aos-duration="2000" className="title">
+          <div data-aos="fade-up" className="title">
             <p>Features</p>
             <h1>Design that solves problems, one product at a time</h1>
           </div>
           <Features>
             {featuresData.map((feature, index) => (
-              <Feature data-aos="zoom-out" data-aos-duration="2000">
+              <Feature data-aos="zoom-out">
                 <Content key={index}>
                   <img src={feature.icon} alt={feature.title} />
                   <h4>{feature.title}</h4>

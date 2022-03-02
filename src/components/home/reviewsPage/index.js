@@ -37,7 +37,6 @@ function ReviewsPage({ item }) {
             {reviewsData.map((item, index) => (
               <div
                 data-aos="fade-left"
-                data-aos-duration="2000"
                 className={index === reviewSlider ? "slide active" : "slide"}
                 key={index}
               >
@@ -55,7 +54,7 @@ function ReviewsPage({ item }) {
                 </div>
               </div>
             ))}
-            <div data-aos="zoom-in" data-aos-duration="2000" className="right">
+            <div data-aos="zoom-in" className="right">
               <GoChevronLeft
                 color="#28293999"
                 size={36}

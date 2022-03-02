@@ -43,12 +43,7 @@ const Template = () => {
         </TemplateNav>
         <Col1>
           {templateData.map((item) => (
-            <TemplateItem
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-offset="3"
-              key={item.id}
-            >
+            <TemplateItem data-aos="fade-up" data-aos-offset="3" key={item.id}>
               <img src={item.img} alt={`template${item.id}`} />
               <h2>Template {item.id}</h2>
               <p>{item.text}</p>

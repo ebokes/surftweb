@@ -13,11 +13,7 @@ function FooterPage() {
     <BackdropContainer bg="#1C1E53">
       <Container pad="10rem 0 0 0" padm="5rem 0 0 0">
         <FooterContainer>
-          <Col1
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-once="true"
-          >
+          <Col1 data-aos="fade-right" data-aos-once="true">
             <div>
               <h2>Surftweb</h2>
               <p>
@@ -27,22 +23,14 @@ function FooterPage() {
             </div>
           </Col1>
           <Col2>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              data-aos-once="true"
-            >
+            <div data-aos="fade-left" data-aos-once="true">
               <h1>Lets Talk!</h1>
               <p>
                 We are always open to discuss your project, improve your online
                 presence and help with your UX/UI design challenges.
               </p>
             </div>
-            <SocialStyle
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              data-aos-once="true"
-            >
+            <SocialStyle data-aos="zoom-in" data-aos-once="true">
               <Handle href="https://facebook.com" target="_blank">
                 <MdFacebook size={25} />
               </Handle>
@@ -58,12 +46,7 @@ function FooterPage() {
             </SocialStyle>
           </Col2>
         </FooterContainer>
-        <Bottom
-          data-aos="fade-down"
-          data-aos-duration="2000"
-          data-aos-offset="0"
-          data-aos-once="true"
-        >
+        <Bottom data-aos="fade-down" data-aos-offset="0" data-aos-once="true">
           <Contact>
             <div>
               <h5>Email me at</h5>

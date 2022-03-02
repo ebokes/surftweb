@@ -3,20 +3,13 @@ import {
   BackdropContainer,
   Container,
 } from "../../reuseableComponents/containerStyle";
-import {
-  NavbarContent,
-  Logo,
-  MenuButton,
-  CButton,
-  NavLinks,
-} from "./navbarStyle";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineClose } from "react-icons/md";
+import { NavbarContainer, Logo, CButton, MenuButton } from "./navbarStyle";
+import { Sling as Hamburger } from "hamburger-react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(true);
-
-  const handleClick = () => setToggleMenu((prevState) => prevState);
+  const [toggle, setToggle] = useState(false);
+  const handleClose = () => setToggle(false);
 
   return (
     <div>
@@ -28,41 +21,66 @@ const Navbar = () => {
         height="7.8rem"
       >
         <Container pad="0 0 0 0" padm="0 0 0 0">
-          <NavbarContent>
-            <Logo to="/">
+          <NavbarContainer>
+            <Logo onClick={handleClose} to="/">
               <h2>Surftweb</h2>
             </Logo>
-            <nav>
-              <ul onClick={handleClick} className={toggleMenu ? "up" : "down"}>
-                <li>
-                  <NavLinks className="active" to="/">
-                    Home
-                  </NavLinks>
-                </li>
-                <li>
-                  <NavLinks to="/about-us">About Us</NavLinks>
-                </li>
-                <li>
-                  <NavLinks to="/portfolio">Portfolio</NavLinks>
-                </li>
-                <li>
-                  <NavLinks to="/pricing">Pricing</NavLinks>
-                </li>
-                <li>
-                  <CButton bgh="rgba(255, 255, 255, 0.1)" href="/contact-us">
-                    Contact Us
-                  </CButton>
-                </li>
-              </ul>
-            </nav>
-            <MenuButton onClick={handleClick}>
-              {toggleMenu ? (
-                <GiHamburgerMenu fontSize="2.8rem" />
-              ) : (
-                <MdOutlineClose fontSize="2.8rem" />
-              )}
+            <ul className={toggle ? "mobile-menu" : "desktop-menu"}>
+              <li>
+                <NavLink
+                  exact
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/about-us"
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/portfolio"
+                >
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="navLink"
+                  activeClassName="active"
+                  onClick={handleClose}
+                  to="/pricing"
+                >
+                  Pricing
+                </NavLink>
+              </li>
+              <li>
+                <CButton
+                  bgh="rgba(255, 255, 255, 0.1)"
+                  onClick={handleClose}
+                  to="/contact-us"
+                >
+                  Contact Us
+                </CButton>
+              </li>
+            </ul>
+            <MenuButton className="menu-button">
+              <Hamburger toggled={toggle} toggle={setToggle} />
             </MenuButton>
-          </NavbarContent>
+          </NavbarContainer>
         </Container>
       </BackdropContainer>
     </div>

@@ -17,7 +17,7 @@ function FaqPage() {
   return (
     <Container>
       <FaqPageContainer>
-        <Col1 data-aos="fade-right" data-aos-duration="2000">
+        <Col1 data-aos="fade-right">
           <h1>Frequently asked questions</h1>
           <a href="/contact-us">Contact us for more info</a>
         </Col1>
