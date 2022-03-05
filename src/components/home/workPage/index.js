@@ -28,8 +28,8 @@ function WorkPage() {
             </SubLink>
           </Col1>
           <Col2>
-            {workData.map((item) => (
-              <List>
+            {workData.map((item, index) => (
+              <List key={index}>
                 <div data-aos="fade-left" className="vector">
                   <div className="block3">
                     <div className="block2">
