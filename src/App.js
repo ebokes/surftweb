@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Portfolio";
 import Pricing from "./pages/Pricing";
 import ContactUs from "./components/contactus/index";
+import ScrollToTop from "./reuseableComponents/ScrollToTop";
 
 const theme = {
   colors: {
@@ -40,20 +41,22 @@ function App() {
   }, []);
   return (
     <Router>
-      <ThemeProvider theme={theme}>
-        <Fragment>
-          <GlobalStyle />
-          <Navbar />
-          <Routes>
-            <Route path="/*" element={<Home />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/contact-us" element={<ContactUs />} />
-          </Routes>
-          <FooterPage />
-        </Fragment>
-      </ThemeProvider>
+      <ScrollToTop>
+        <ThemeProvider theme={theme}>
+          <Fragment>
+            <GlobalStyle />
+            <Navbar />
+            <Routes>
+              <Route path="/*" element={<Home />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+            </Routes>
+            <FooterPage />
+          </Fragment>
+        </ThemeProvider>
+      </ScrollToTop>
     </Router>
   );
 }
