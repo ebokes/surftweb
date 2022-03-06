@@ -20,7 +20,7 @@ function WorkPage() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
-            <SubLink margin="0" href="/contact-us">
+            <SubLink margin="0" to="/contact-us">
               Get in touch with us
               <span>
                 <HiOutlineArrowNarrowRight />

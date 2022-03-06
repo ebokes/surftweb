@@ -4,7 +4,6 @@ import {
   BackdropContainer,
 } from "../../../reuseableComponents/containerStyle";
 import { ReviewsPageContainer, Col1, Col2 } from "./reviewsPageStyle";
-// import woman from "../../../images/woman.png";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { GoChevronLeft } from "react-icons/go";
 import reviewsData from "../../../data/reviewsPageData";

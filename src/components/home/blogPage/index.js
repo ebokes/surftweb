@@ -12,7 +12,7 @@ function BlogPage() {
       <p>{article.date}</p>
       <h4>{article.title}</h4>
       <p>{article.intro}</p>
-      <SubLink margin="0" color="#282938" href={article.url}>
+      <SubLink margin="0" color="#282938" to={article.url}>
         Read More
         <span>
           <HiOutlineArrowNarrowRight />

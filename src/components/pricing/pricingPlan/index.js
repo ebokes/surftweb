@@ -60,7 +60,7 @@ const PricingPlan = () => {
                   </li>
                 </List>
                 <Button
-                  href="#"
+                  to="contact-us"
                   padding="1.6rem 22%"
                   style={{
                     background: index % 2 === 0 && "#282938",

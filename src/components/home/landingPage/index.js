@@ -23,14 +23,14 @@ const LandingPage = () => {
                   do eiusmod tempor incididunt.
                 </p>
                 <span className="grp">
-                  <Button href="/portfolio">View our work</Button>
+                  <Button to="/portfolio">View our work</Button>
                   <div>
                     <SubLink
                       color="#fff"
                       mlm="20%"
                       mlt="1rem"
                       data-aos="fade-left"
-                      href="/pricing"
+                      to="/pricing"
                     >
                       View Pricing
                       <span>

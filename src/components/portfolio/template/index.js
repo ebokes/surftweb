@@ -34,7 +34,7 @@ const Template = () => {
               <div
                 // onClick={active}
                 // className={select[index] ? "active" : "nonactive"}
-                href={item.url}
+                to={item.url}
               >
                 {item.title}
               </div>
@@ -47,7 +47,7 @@ const Template = () => {
               <img src={item.img} alt={`template${item.id}`} />
               <h2>Template {item.id}</h2>
               <p>{item.text}</p>
-              <SubLink margin="0" href="/portfolio" color="#282938">
+              <SubLink margin="0" to="/portfolio" color="#282938">
                 View Portfolio
                 <span>
                   <HiOutlineArrowNarrowRight />

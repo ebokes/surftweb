@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { BiPlus } from "react-icons/bi";
 import { FaqPageContainer, Col1, Col2 } from "./faqPageStyle";
 import faqData from "../../../data/faqPageData";
+import { Link } from "react-router-dom";
 
 function FaqPage() {
   const [clickedIndex, setClickedIndex] = React.useState({});
@@ -19,7 +20,9 @@ function FaqPage() {
       <FaqPageContainer>
         <Col1 data-aos="fade-right">
           <h1>Frequently asked questions</h1>
-          <a href="/contact-us">Contact us for more info</a>
+          <Link className="contact" to="/contact-us">
+            Contact us for more info
+          </Link>
         </Col1>
         <Col2>
           {faqData.map((item, index) => (

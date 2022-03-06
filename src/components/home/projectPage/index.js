@@ -25,7 +25,7 @@ const ProjectPage = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
             margin="0"
-            href="/portfolio"
+            to="/portfolio"
             color="#1C1E53"
           >
             View More
