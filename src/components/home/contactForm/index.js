@@ -44,11 +44,11 @@ function ContactForm() {
                 placeholder="Paste you figma design URL"
               />
               <span></span>
-              <Button href="/#" padding="1.6rem 0">
+              <Button to="/#" padding="1.6rem 0">
                 Send an Inquiry
               </Button>
             </form>
-            <SubLink href="/contact-us" color="#fff" mld="29%">
+            <SubLink to="/contact-us" color="#fff" mld="29%">
               Get in touch with us
               <span>
                 <HiOutlineArrowNarrowRight />

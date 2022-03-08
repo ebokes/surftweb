@@ -13,7 +13,7 @@ const LandingPage = () => {
             Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
             ultricies nec dolor sit amet, scelerisque cursus purus.
           </p>
-          <Button data-aos="zoom-in" href="/contact-us">
+          <Button data-aos="zoom-in" to="/contact-us">
             Contact Us
           </Button>
         </Col>

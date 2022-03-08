@@ -21,7 +21,7 @@ export const Col1 = styled.div`
     font-weight: 600;
   }
 
-  & > a {
+  .contact {
     color: ${({ theme }) => theme.colors.primary3};
   }
 `;

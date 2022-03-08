@@ -23,8 +23,8 @@ const FeaturesPage = () => {
           </div>
           <Features>
             {featuresData.map((feature, index) => (
-              <Feature data-aos="zoom-out">
-                <Content key={index}>
+              <Feature key={index} data-aos="zoom-out">
+                <Content>
                   <img src={feature.icon} alt={feature.title} />
                   <h4>{feature.title}</h4>
                   <p>{feature.text}</p>

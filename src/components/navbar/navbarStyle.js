@@ -26,50 +26,27 @@ export const NavbarContainer = styled.div`
         margin-right: 3rem;
         color: ${({ theme }) => theme.colors.tertiary5};
         position: relative;
-
-        ::before {
-          content: "";
-          width: 0rem;
-          height: 2px;
-          background-color: ${({ theme }) => theme.colors.tertiary2};
-          position: absolute;
-          left: 1px;
-          bottom: -4px;
-          transition: all 0.5s;
-        }
+        transition: all 0.3s;
 
         :hover {
           color: ${({ theme }) => theme.colors.tertiary2};
 
-          &::before {
-            content: "";
-            width: 5rem;
-            height: 2px;
-            background-color: ${({ theme }) => theme.colors.tertiary2};
-            position: absolute;
-            left: 1px;
-            bottom: -4px;
-          }
+          padding-bottom: 0.1rem;
+          border-bottom: 2px solid #fff;
         }
       }
       .active {
         color: ${({ theme }) => theme.colors.tertiary2};
 
-        &::before {
-          content: "";
-          width: 5rem;
-          height: 2px;
-          background-color: ${({ theme }) => theme.colors.tertiary2};
-          position: absolute;
-          left: 1px;
-          bottom: -4px;
-        }
+        padding-bottom: 0.1rem;
+        border-bottom: 2px solid #ffffff8e;
       }
     }
   }
 
   .mobile-menu {
     background-color: #1c1e53e8;
+    /* filter: sepia(3); */
     position: absolute;
     right: -7rem;
     top: 7.8rem;

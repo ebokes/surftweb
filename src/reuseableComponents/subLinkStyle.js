@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const SubLink = styled.a`
+export const SubLink = styled(Link)`
   display: flex;
   align-items: center;
   color: ${({ color }) => color || "#2405F2"};

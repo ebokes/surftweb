@@ -28,9 +28,10 @@ const Navbar = () => {
             <ul className={toggle ? "mobile-menu" : "desktop-menu"}>
               <li>
                 <NavLink
-                  exact
-                  className="navLink"
-                  activeClassName="active"
+                  end
+                  className={({ isActive }) =>
+                    `navLink ${isActive ? " active" : ""}`
+                  }
                   onClick={handleClose}
                   to="/"
                 >
@@ -39,8 +40,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className="navLink"
-                  activeClassName="active"
+                  className={({ isActive }) =>
+                    `navLink ${isActive ? " active" : ""}`
+                  }
                   onClick={handleClose}
                   to="/about-us"
                 >
@@ -49,8 +51,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className="navLink"
-                  activeClassName="active"
+                  className={({ isActive }) =>
+                    `navLink ${isActive ? " active" : ""}`
+                  }
                   onClick={handleClose}
                   to="/portfolio"
                 >
@@ -59,8 +62,9 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  className="navLink"
-                  activeClassName="active"
+                  className={({ isActive }) =>
+                    `navLink ${isActive ? " active" : ""}`
+                  }
                   onClick={handleClose}
                   to="/pricing"
                 >

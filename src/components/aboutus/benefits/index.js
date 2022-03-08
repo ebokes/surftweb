@@ -24,8 +24,8 @@ const BenefitsSection = () => {
         </div>
         <Benefits>
           {benefitsData.map((benefits, index) => (
-            <Benefit data-aos="zoom-in">
-              <Content key={index}>
+            <Benefit key={index} data-aos="zoom-in">
+              <Content>
                 <img src={benefits.icon} alt={benefits.title} />
                 <h4>{benefits.title}</h4>
                 <p>{benefits.text}</p>

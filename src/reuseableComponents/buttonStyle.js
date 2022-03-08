@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   color: ${({ color }) => color || "#1B1C2B"};
   background-color: ${({ bg }) => bg || "#FCD980"};
   border: ${({ border }) => border || "none"};
