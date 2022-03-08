@@ -111,6 +111,11 @@ export const Col1 = styled.div`
       color: ${({ theme }) => theme.colors.secondary2};
       margin-right: 1.3rem;
 
+      span {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+      }
+
       &:hover {
         color: ${({ theme }) => theme.colors.tertiary2};
       }
@@ -177,6 +182,14 @@ export const Row1 = styled.div`
       text-decoration: none;
       margin-right: 1.3rem;
       color: ${({ theme }) => theme.colors.secondary2};
+      display: flex;
+      align-items: center;
+
+      & > span {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+      }
+
       &:hover {
         color: ${({ theme }) => theme.colors.tertiary2};
       }
