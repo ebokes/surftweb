@@ -17,8 +17,8 @@ function WorkPage() {
           <Col1 data-aos="fade-up">
             <h1>How we work</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              We've got you covered from analysis and designs to completely
+              optimized website solutions.
             </p>
             <SubLink margin="0" to="/contact-us">
               Get in touch with us

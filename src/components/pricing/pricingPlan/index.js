@@ -20,8 +20,9 @@ const PricingPlan = () => {
         <Row1 data-aos="zoom-in" data-aos-once="true">
           <h2>Our Pricing Plans</h2>
           <p>
-            When you’re ready to go beyond prototyping in Figma, Webflow is
-            ready to help you bring your designs to life — without coding them.
+            Surftweb provides unmatched website design pricing packages for
+            every business - par excellent designs, comprehensive features and
+            great client servicing.
           </p>
         </Row1>
         <Row2>
@@ -50,18 +51,13 @@ const PricingPlan = () => {
                   <p>{card.text}</p>
                 </Text>
                 <List>
-                  <li>{card.bullet[0]}</li>
-                  <li>{card.bullet[1]}</li>
-                  <li>{card.bullet[2]}</li>
-                  <li>{card.bullet[3]}</li>
-                  <li>{card.bullet[4]}</li>
-                  <li style={{ display: card.bullet.length < 6 && "none" }}>
-                    {card.bullet[5]}
-                  </li>
+                  {card.bullet.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </List>
                 <Button
                   to="contact-us"
-                  padding="1.6rem 22%"
+                  padding="1rem 22%"
                   style={{
                     background: index % 2 === 0 && "#282938",
                     color: index % 2 === 0 && "#fff",

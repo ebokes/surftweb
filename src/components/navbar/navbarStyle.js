@@ -46,7 +46,6 @@ export const NavbarContainer = styled.div`
 
   .mobile-menu {
     background-color: #1c1e53e8;
-    /* filter: sepia(3); */
     position: absolute;
     right: -7rem;
     top: 7.8rem;
@@ -80,6 +79,11 @@ export const CButton = styled(LinkR)`
   border-radius: 4.1rem;
   font-weight: 600;
   line-height: 3.2rem;
+  transition: 0.5s;
+
+  &:hover {
+    border: 2px solid #eee;
+  }
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     border: none;

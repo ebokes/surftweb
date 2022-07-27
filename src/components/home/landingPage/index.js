@@ -19,8 +19,8 @@ const LandingPage = () => {
               <div data-aos="fade-up">
                 <h1>Building stellar websites for early startups</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  We've created stunning websites to help our clients pave their
+                  way to strong online presence.
                 </p>
                 <span className="grp">
                   <Button to="/portfolio">View our work</Button>

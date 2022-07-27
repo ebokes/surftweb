@@ -11,9 +11,9 @@ const Intro = () => {
           <h4>About us</h4>
           <h1>Our designs solve problems</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            With the expertise of our dedicated team, surftweb takes your
+            business to a whole new level by blending innovative tactics that
+            provide digital experiences like no other.
           </p>
         </Col1>
         <Col2 data-aos="fade-left">

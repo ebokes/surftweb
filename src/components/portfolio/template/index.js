@@ -48,7 +48,7 @@ const Template = () => {
               <h2>Template {item.id}</h2>
               <p>{item.text}</p>
               <SubLink margin="0" to="/portfolio" color="#282938">
-                View Portfolio
+                Read case study
                 <span>
                   <HiOutlineArrowNarrowRight />
                 </span>
