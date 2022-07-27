@@ -30,6 +30,7 @@ export const Row1 = styled.div`
 export const Row2 = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 0 2rem;
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 46rem;
@@ -51,10 +52,16 @@ export const Card = styled.div`
 
   &:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 16px 3px #ccc;
   }
 
   @media (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 100%;
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: none;
+    }
   }
 
   @media (max-width: 550px) {

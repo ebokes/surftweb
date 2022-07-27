@@ -14,19 +14,20 @@ const WhoWeAre = () => {
             <Col1 data-aos="fade-right">
               <h2>Goal focused</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Our expert web developers aim to create engaging websites while
+                providing a fun, easy and productive experience for you. To
+                better comprehend your vision, our staff will attentively note
+                and listen to your ideas and needs and help bring them to life.
               </p>
             </Col1>
             <Col2 data-aos="fade-left" data-aos-once="true">
-              <h2>Continuous improvement</h2>
+              <h2>Our Philosophy</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Before suggesting or providing any digital solution we take due
+                diligence to understand our client's brand, their project and
+                their target audience. Each piece is meticulously created and
+                thoroughly examined to guarantee that it meets or exceeds
+                expectations.
               </p>
             </Col2>
           </Row1>

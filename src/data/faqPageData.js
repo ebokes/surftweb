@@ -3,31 +3,31 @@ const faqData = [
     id: 1,
     question: "How much time does it take?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This depends on the nature of the website in question but we always deliver within the shortest time frame.",
   },
   {
     id: 2,
-    question: "What is your class naming convention?",
+    question: "Do you have one-on-one client training?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, velit perspiciatis deserunt officia tempora aliquid? Debitis ipsum autem cum itaque.",
+      "We provide one-on-one training prior to the launch of the clients website so that the client can handle the site's functionality.",
   },
   {
     id: 3,
     question: "How do you communicate?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolorem? Ea similique voluptatibus harum nisi!",
+      "You can contact through our hotlines, facebook, twitter and instagram pages below the website page.",
   },
   {
     id: 4,
     question: "I have a bigger project. Can you handle it?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste odit ab qui in repellat officia animi nulla?",
+      "We comfortably handle all kinds of project from simple to complex designs, you can checkout our portfolio to see some of our projects",
   },
   {
     id: 5,
-    question: "What is your class naming convention?",
+    question: "Are your designs fully responsive?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam quam, in amet, itaque modi quis unde exercitationem quisquam ad aperiam!",
+      "Windec is known to design and deliver projects that are responsive across all devices and browsers.",
   },
 ];
 export default faqData;

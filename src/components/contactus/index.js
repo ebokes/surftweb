@@ -48,8 +48,8 @@ const Contact = () => {
         <Row1 data-aos="fade-up" data-aos-once="true">
           <h1>Contact Us</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
+            For technical support, business consultations or general inquiries,
+            our customer service teams are ready to serve you 24/7, 365 days.
           </p>
         </Row1>
         <Row2 data-aos="fade-up" data-aos-once="true">

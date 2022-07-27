@@ -38,10 +38,7 @@ const ProjectPage = () => {
           <Col1>
             <div>
               <h3>Workhub office Webflow Webflow Design</h3>
-              <p>
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam
-              </p>
+              <p>Trust us to give you nothing but the best.</p>
               <Link className="view" to="/portfolio">
                 View portfolio
                 <span>

@@ -16,9 +16,8 @@ function ContactForm() {
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-              enim.
+              At Windec, we apply seamsless, result-oriented web designs and
+              development processes customized according to your brand.
             </p>
           </div>
         </Col1>
@@ -26,8 +25,8 @@ function ContactForm() {
           <div>
             <h5>Send inquiry</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              For business consultations or general inquiries, our customer
+              service is ready to serve you 24/7, 365 days.
             </p>
             <form>
               <input

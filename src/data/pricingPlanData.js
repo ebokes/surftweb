@@ -3,7 +3,7 @@ const pricingPlanData = [
     price: 299,
     rider: "Per Design",
     title: "Landing Page ",
-    text: "When you’re ready to go beyond prototyping in Figma,",
+    text: "Suitable for potential startups and brand revamps for companies,",
     bullet: [
       "All limited links",
       "Own analytics platform",

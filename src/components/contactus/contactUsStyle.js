@@ -24,6 +24,12 @@ export const Row1 = styled.div`
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.8rem;
+    text-align: center;
+    width: 70rem;
+
+    @media (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      width: auto;
+    }
   }
 `;
 export const Row2 = styled.div`

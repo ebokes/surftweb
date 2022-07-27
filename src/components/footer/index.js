@@ -54,7 +54,7 @@ function FooterPage() {
             </div>
             <div>
               <h5>Call us on</h5>
-              <p>0927 6277 28525</p>
+              <p>+234 903 950 6171</p>
             </div>
           </Contact>
           <div>
