@@ -1,6 +1,17 @@
-import { Fragment } from "react";
-import { GlobalStyle } from "./styles/GlobalStyles";
+import { Fragment, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalStyle } from "./reuseableComponents/globalStyle";
 import { ThemeProvider } from "styled-components";
+import Navbar from "./components/navbar/index";
+import FooterPage from "./components/footer/index";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
+import ContactUs from "./components/contactus/index";
+import ScrollToTop from "./reuseableComponents/ScrollToTop";
 
 const theme = {
   colors: {
@@ -9,11 +20,13 @@ const theme = {
     primary3: "#2405F2",
     primary4: "#EEF4FA",
     secondary1: "#FCD980",
+    secondary2: "#FDE4A6",
     tertiary1: "#F4F6FC",
     tertiary2: "#FFF",
     tertiary3: "#000",
     tertiary4: "#1B1C2B",
     tertiary5: "rgba(255, 255, 255, 0.7)",
+    tertiary6: "#F4F6FC33",
   },
 
   mediaQuery: {
@@ -23,13 +36,28 @@ const theme = {
 };
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
   return (
-    <ThemeProvider theme={theme}>
-      <Fragment>
-        <GlobalStyle />
-        <h1>Hello world</h1>
-      </Fragment>
-    </ThemeProvider>
+    <Router>
+      <ScrollToTop>
+        <ThemeProvider theme={theme}>
+          <Fragment>
+            <GlobalStyle />
+            <Navbar />
+            <Routes>
+              <Route path="/*" element={<Home />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+            </Routes>
+            <FooterPage />
+          </Fragment>
+        </ThemeProvider>
+      </ScrollToTop>
+    </Router>
   );
 }
 
